@@ -1,0 +1,23 @@
+{
+  "record": {
+    "id": "pumble",
+    "one_liner": "",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "no_sources_found",
+    "evidence": {}
+  },
+  "flags": [
+    "no_sources"
+  ],
+  "sources": [],
+  "model": null
+}

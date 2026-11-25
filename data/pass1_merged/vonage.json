@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "vonage",
+    "one_liner": "Vonage provides a comprehensive suite of communication APIs spanning messaging, voice, video, and network features, enabling developers to integrate multiple channels like SMS, WhatsApp, and voice calls into their applications.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "quote": "Vonage APIs support different authentication methods depending on which product you are using: API Key and Secret (Header) JSON Web Token (JWT)",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "To work with our APIs, you will need to sign up for an account . This will give you an API key and secret that you can use to access our APIs.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Our specifications conform to OpenAPI specification version 3, also known as OAS3.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.vonage.com/en/api",
+        "quote": "Messaging Messages API For SMS, MMS, Facebook, WhatsApp, Viber, Email and much more... Voice Voice API Make and receive telephone calls to or from anywhere in the world.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found:['api_key', 'basic', 'jwt', 'other']",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer.vonage.com/en/getting-started/overview",
+    "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "https://developer.vonage.com/en/api"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

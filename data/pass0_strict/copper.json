@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "copper",
+    "one_liner": "Copper provides a RESTful Web API with JSON-formatted responses to access most Copper resources.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Authentication methods and access/tier requirements are not specified in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.copper.com/",
+        "quote": "The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.copper.com/",
+        "quote": "The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.copper.com/"
+  ],
+  "model": "gemini-3.5-flash"
+}

@@ -1,0 +1,27 @@
+name: Run research agent on one app
+on:
+  workflow_dispatch:
+    inputs:
+      app:
+        description: "App name or id from data/apps.csv (e.g. Attio)"
+        required: true
+        default: "Attio"
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - run: pip install -r requirements.txt
+      - name: Research the app
+        shell: bash
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          APP: ${{ inputs.app }}
+        run: python -m agent run --app "$APP" | tee result.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-result
+          path: result.json

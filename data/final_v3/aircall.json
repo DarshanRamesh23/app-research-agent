@@ -1,0 +1,89 @@
+{
+  "record": {
+    "id": "aircall",
+    "one_liner": "Aircall offers a REST API and Webhooks supporting OAuth 2.0 and Basic Auth for managing phone calls, contacts, users, campaigns, and analytics.",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "partner_gated",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://developer.aircall.io/docs/authentication",
+        "quote": "You\u2019re building a public integration and are an approved tech partner",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "Aircall Public API is a classic REST API.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "This service allows any developers to retrieve and manage Aircall data with HTTP requests.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "Page 2 explicitly states that Aircall supports Basic Authentication and OAuth."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not mention administrative approval requirements for obtaining test credentials."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "Page 2 explicitly specifies that building a public integration requires being an approved tech partner."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "Both pages explicitly refer to the API as a REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "Page 1 lists endpoints across numerous resources including Users, Calls, Conversations, Campaigns, Messages, Contacts, Analytics, and Webhooks."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "admin_approval",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not mention administrative approval requirements for obtaining test credentials.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developers.aircall.io/api-references",
+    "https://developer.aircall.io/docs/authentication"
+  ]
+}

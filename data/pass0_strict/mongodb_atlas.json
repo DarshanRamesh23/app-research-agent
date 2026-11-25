@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "mongodb_atlas",
+    "one_liner": "MongoDB Atlas is a cloud database service providing programmatic access via an Administration API, CLI, Go SDK, and various infrastructure-as-code integrations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Authentication methods for the API are not specified in the provided text.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://www.mongodb.com/docs/get-started/",
+        "quote": "This command creates a free cluster on MongoDB Atlas. atlas setup --clusterName myDeployment",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://www.mongodb.com/docs/atlas/api/",
+        "quote": "Use the REST API and available client SDKs to power search and retrieval in your AI applications.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.mongodb.com/docs/atlas/api/",
+        "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas , including projects, users, and clusters.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found",
+    "access_ship:quote_not_found"
+  ],
+  "sources": [
+    "https://www.mongodb.com/docs/atlas/api/",
+    "https://www.mongodb.com/docs/get-started/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

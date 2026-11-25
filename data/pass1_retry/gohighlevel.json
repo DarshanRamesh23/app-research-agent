@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "gohighlevel",
+    "one_liner": "unknown",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient information in sources to determine API integration capabilities.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://marketplace.gohighlevel.com/developers"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

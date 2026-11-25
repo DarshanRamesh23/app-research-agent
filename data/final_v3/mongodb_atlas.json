@@ -1,0 +1,84 @@
+{
+  "record": {
+    "id": "mongodb_atlas",
+    "one_liner": "MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas using OAuth 2.0 service accounts and HTTP Digest-based API keys.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+        "quote": "The Atlas Administration API accepts the following authentication methods:\n\n- Service account access tokens (OAuth 2.0)\n\n- API keys (HTTP Digest Authentication)",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://www.mongodb.com/docs/atlas/",
+        "quote": "Scale from prototype to production on one platform : The same APIs, drivers, and tools are available all the way from free to scaled deployments.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2023-01-01",
+        "quote": "The MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2023-01-01",
+        "quote": "The MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided billing documentation covers pricing for Atlas usage but does not specify partner program or publishing requirements for integrations."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation demonstrates an HTTP REST API using standard verbs like GET and POST alongside JSON media types."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that the MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided billing documentation covers pricing for Atlas usage but does not specify partner program or publishing requirements for integrations.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [
+    "auth_methods:quote_not_found:['oauth2', 'api_key', 'bearer_token']"
+  ],
+  "sources": [
+    "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+    "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2023-01-01",
+    "https://www.mongodb.com/docs/atlas/",
+    "https://www.mongodb.com/docs/atlas/billing/"
+  ]
+}

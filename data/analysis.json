@@ -1,0 +1,384 @@
+{
+  "source": "data/final_v3",
+  "total": 100,
+  "with_record": 93,
+  "no_data": [
+    {
+      "id": "zoho_cliq",
+      "name": "Zoho Cliq",
+      "status": "no_record"
+    },
+    {
+      "id": "salesforce_commerce_cloud",
+      "name": "Salesforce Commerce Cloud",
+      "status": "no_record"
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "status": "no_record"
+    },
+    {
+      "id": "ramp",
+      "name": "Ramp",
+      "status": "no_record"
+    },
+    {
+      "id": "pitchbook",
+      "name": "PitchBook",
+      "status": "no_record"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "status": "no_record"
+    },
+    {
+      "id": "fathom",
+      "name": "Fathom",
+      "status": "no_record"
+    }
+  ],
+  "verdict": {
+    "unknown": 53,
+    "buildable_now": 22,
+    "buildable_with_caveat": 17,
+    "blocked": 1
+  },
+  "auth": {
+    "oauth2": 37,
+    "bearer_token": 25,
+    "api_key": 26,
+    "basic": 9,
+    "unknown": 31,
+    "other": 5,
+    "jwt": 5,
+    "none": 3
+  },
+  "blockers": {
+    "ship_path_unverified": 5,
+    "paid_plan": 6,
+    "app_review": 2,
+    "trial_only": 2,
+    "partner_program": 1,
+    "no_public_api": 1,
+    "sdk_only": 1
+  },
+  "access_test": {
+    "unknown": 49,
+    "free_self_serve": 32,
+    "free_trial": 7,
+    "paid_plan": 2,
+    "admin_approval": 2,
+    "no_api": 1
+  },
+  "access_ship": {
+    "unknown": 54,
+    "free_self_serve": 24,
+    "paid_plan": 8,
+    "admin_approval": 3,
+    "partner_gated": 2,
+    "free_trial": 1,
+    "no_api": 1
+  },
+  "api_type": {
+    "rest": 67,
+    "both": 3,
+    "unknown": 16,
+    "graphql": 5,
+    "cli_only": 1,
+    "sdk_only": 1
+  },
+  "api_breadth": {
+    "unknown": 38,
+    "broad": 45,
+    "medium": 8,
+    "narrow": 2
+  },
+  "official_mcp": {
+    "unknown": 63,
+    "yes": 26,
+    "no": 3,
+    "community": 1
+  },
+  "category_apps": {
+    "CRM and Sales": 10,
+    "Support and Helpdesk": 10,
+    "Communications and Messaging": 9,
+    "Marketing, Ads, Email and Social": 10,
+    "Ecommerce": 9,
+    "Data, SEO and Scraping": 10,
+    "Developer, Infra and Data platforms": 9,
+    "Productivity and Project Management": 10,
+    "Finance and Fintech": 8,
+    "AI, Research and Media-native": 8
+  },
+  "category_auth": {
+    "CRM and Sales": {
+      "oauth2": 8,
+      "bearer_token": 2,
+      "api_key": 3,
+      "basic": 2,
+      "unknown": 2
+    },
+    "Support and Helpdesk": {
+      "unknown": 5,
+      "oauth2": 3,
+      "bearer_token": 3,
+      "api_key": 3
+    },
+    "Communications and Messaging": {
+      "oauth2": 3,
+      "api_key": 2,
+      "bearer_token": 2,
+      "other": 2,
+      "basic": 2,
+      "unknown": 2
+    },
+    "Marketing, Ads, Email and Social": {
+      "oauth2": 5,
+      "api_key": 4,
+      "unknown": 4,
+      "bearer_token": 1
+    },
+    "Ecommerce": {
+      "oauth2": 5,
+      "bearer_token": 4,
+      "jwt": 2,
+      "api_key": 1,
+      "unknown": 3
+    },
+    "Data, SEO and Scraping": {
+      "unknown": 3,
+      "api_key": 5,
+      "oauth2": 2,
+      "bearer_token": 2,
+      "other": 1,
+      "none": 2
+    },
+    "Developer, Infra and Data platforms": {
+      "oauth2": 4,
+      "basic": 2,
+      "bearer_token": 4,
+      "jwt": 2,
+      "unknown": 3,
+      "api_key": 3
+    },
+    "Productivity and Project Management": {
+      "unknown": 3,
+      "oauth2": 6,
+      "api_key": 1,
+      "basic": 2,
+      "jwt": 1,
+      "bearer_token": 2
+    },
+    "Finance and Fintech": {
+      "api_key": 2,
+      "basic": 1,
+      "bearer_token": 2,
+      "other": 1,
+      "unknown": 4,
+      "oauth2": 1
+    },
+    "AI, Research and Media-native": {
+      "unknown": 2,
+      "api_key": 2,
+      "bearer_token": 3,
+      "other": 1,
+      "none": 1
+    }
+  },
+  "category_access_test": {
+    "CRM and Sales": {
+      "unknown": 5,
+      "free_self_serve": 5
+    },
+    "Support and Helpdesk": {
+      "free_trial": 3,
+      "free_self_serve": 2,
+      "paid_plan": 1,
+      "unknown": 4
+    },
+    "Communications and Messaging": {
+      "free_self_serve": 6,
+      "unknown": 3
+    },
+    "Marketing, Ads, Email and Social": {
+      "unknown": 7,
+      "free_self_serve": 1,
+      "admin_approval": 1,
+      "free_trial": 1
+    },
+    "Ecommerce": {
+      "free_self_serve": 3,
+      "unknown": 6
+    },
+    "Data, SEO and Scraping": {
+      "free_trial": 3,
+      "free_self_serve": 4,
+      "unknown": 2,
+      "no_api": 1
+    },
+    "Developer, Infra and Data platforms": {
+      "unknown": 7,
+      "free_self_serve": 2
+    },
+    "Productivity and Project Management": {
+      "free_self_serve": 4,
+      "unknown": 6
+    },
+    "Finance and Fintech": {
+      "free_self_serve": 2,
+      "unknown": 5,
+      "admin_approval": 1
+    },
+    "AI, Research and Media-native": {
+      "paid_plan": 1,
+      "unknown": 4,
+      "free_self_serve": 3
+    }
+  },
+  "category_access_ship": {
+    "CRM and Sales": {
+      "unknown": 6,
+      "free_self_serve": 4
+    },
+    "Support and Helpdesk": {
+      "paid_plan": 3,
+      "admin_approval": 1,
+      "unknown": 6
+    },
+    "Communications and Messaging": {
+      "free_self_serve": 4,
+      "unknown": 3,
+      "partner_gated": 1,
+      "paid_plan": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "unknown": 7,
+      "admin_approval": 1,
+      "free_self_serve": 1,
+      "free_trial": 1
+    },
+    "Ecommerce": {
+      "free_self_serve": 3,
+      "unknown": 6
+    },
+    "Data, SEO and Scraping": {
+      "paid_plan": 3,
+      "partner_gated": 1,
+      "free_self_serve": 3,
+      "unknown": 2,
+      "no_api": 1
+    },
+    "Developer, Infra and Data platforms": {
+      "unknown": 6,
+      "free_self_serve": 3
+    },
+    "Productivity and Project Management": {
+      "free_self_serve": 2,
+      "unknown": 8
+    },
+    "Finance and Fintech": {
+      "free_self_serve": 2,
+      "unknown": 5,
+      "admin_approval": 1
+    },
+    "AI, Research and Media-native": {
+      "paid_plan": 1,
+      "unknown": 5,
+      "free_self_serve": 2
+    }
+  },
+  "free_to_test_gated_to_ship": [
+    "Zendesk",
+    "Intercom",
+    "LiveAgent",
+    "Vonage",
+    "DataForSEO",
+    "SE Ranking",
+    "Ahrefs",
+    "MrScraper"
+  ],
+  "quadrant": {
+    "self_serve_wide": [
+      "HubSpot",
+      "Pipedrive",
+      "Attio",
+      "Twenty",
+      "Podio",
+      "Zendesk",
+      "Intercom",
+      "Freshdesk",
+      "Front",
+      "Slack",
+      "Pumble",
+      "Discord",
+      "Telegram",
+      "Vonage",
+      "Klaviyo",
+      "SendGrid",
+      "Shopify",
+      "DataForSEO",
+      "SE Ranking",
+      "Ahrefs",
+      "MrScraper",
+      "Apify",
+      "Firecrawl",
+      "Clay",
+      "Cloudflare",
+      "Neo4j",
+      "Notion",
+      "Asana",
+      "Coda",
+      "Plaid",
+      "Reducto"
+    ],
+    "gated_wide": [
+      "Pylon"
+    ],
+    "self_serve_narrow": [
+      "higgsfield",
+      "Mermaid CLI"
+    ]
+  },
+  "easy_wins": [
+    "HubSpot",
+    "Attio",
+    "Twenty",
+    "Podio",
+    "Slack",
+    "Pumble",
+    "Discord",
+    "Telegram",
+    "Klaviyo",
+    "Shopify",
+    "WooCommerce",
+    "Gumroad",
+    "Apify",
+    "Firecrawl",
+    "Clay",
+    "Cloudflare",
+    "Neo4j",
+    "Notion",
+    "Coda",
+    "Stripe",
+    "Plaid",
+    "higgsfield"
+  ],
+  "outreach_list": [
+    "Intercom",
+    "Aircall",
+    "LinkedIn Ads",
+    "Ahrefs",
+    "Sherlock",
+    "Brex"
+  ],
+  "headlines": [
+    "22 of 100 apps are buildable today, 17 with a caveat, 1 blocked, 53 unknown; 7 have no usable record.",
+    "Most common auth: oauth2 (37), unknown (31), api_key (26).",
+    "Most common blocker: paid_plan (6), ship_path_unverified (5), app_review (2).",
+    "8 apps are free to test but gated to ship publicly (the two-layer gate).",
+    "Official MCP server: yes 26, community 1, no 3, unknown 63."
+  ]
+}

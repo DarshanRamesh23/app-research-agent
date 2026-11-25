@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "hubspot",
+    "one_liner": "HubSpot provides date-versioned REST APIs and bearer token/OAuth authentication for CRM and business operations data integration.",
+    "auth_methods": [
+      "bearer_token",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "When making a call to one of the HubSpot API endpoints, set the value of the Authorization field to Bearer [YOUR_TOKEN] ... Private app access tokens are implemented on top of OAuth",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "To access legacy apps in your standard HubSpot account, navigate to Development , then click Legacy apps in the left sidebar menu.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "Private apps allow you to use HubSpot\u2019s APIs to access specific data from your HubSpot account.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "quote": "For example, to retrieve all contacts: GET /crm/objects/2026-09/contacts All APIs, whether legacy, new, or beta, use the same root path as before: https://api.hubapi.com/ .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "Private apps allow you to use HubSpot\u2019s APIs to access specific data from your HubSpot account. You can authorize what each private app can request or change in your account",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+    "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

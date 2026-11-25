@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "higgsfield",
+    "one_liner": "Higgsfield provides AI image and video generation tools primarily accessed through an MCP (Model Context Protocol) server and CLI rather than a traditional developer REST API.",
+    "auth_methods": [
+      "other"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "sdk_only",
+    "api_breadth": "narrow",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "No traditional programmatic API (REST/GraphQL); integrations rely on MCP and CLI tooling.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Authenticate: run `higgsfield auth login` and complete the sign-in in the browser it opens.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "1. Install the CLI: run `npm i -g @higgsfield/cli` . 2. Authenticate: run `higgsfield auth login` and complete the sign-in in the browser it opens.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Do I need an API key? No. Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Once connected, your agent can generate images, create videos, train characters, and browse your creation history, all within a single session.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://higgsfield.ai/cli",
+        "quote": "Higgsfield uses MCP (Model Context Protocol), an open standard that gives AI agents access to external tools.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://higgsfield.ai/cli"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

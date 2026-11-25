@@ -1,0 +1,85 @@
+{
+  "record": {
+    "id": "lark_larksuite",
+    "one_liner": "Lark (Larksuite) provides an open platform with server APIs requiring access tokens for integration.",
+    "auth_methods": [
+      "bearer_token",
+      "other"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+        "quote": "\u81ea\u5efa\u5e94\u7528\u901a\u8fc7\u6b64\u63a5\u53e3\u83b7\u53d6 tenant_access_token",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+        "quote": "HTTP URL | https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The page documents fetching a tenant_access_token using app_id and app_secret, but does not explicitly mention bearer_token or detail how token authentication is passed in API calls."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page details an HTTP POST endpoint utilizing JSON request and response payloads, which directly confirms a REST API."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "bearer_token",
+        "other"
+      ],
+      "after": [
+        "bearer_token",
+        "other"
+      ],
+      "l2": "unverifiable",
+      "reason": "The page documents fetching a tenant_access_token using app_id and app_secret, but does not explicitly mention bearer_token or detail how token authentication is passed in API calls.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "https://open.larksuite.com/document/home/index",
+    "https://open.larksuite.com/document/uAjLw4CM/ukTMukTM4UTL5ATM",
+    "https://open.larksuite.com/document/server-docs/authentication-management/access-token/overview"
+  ]
+}

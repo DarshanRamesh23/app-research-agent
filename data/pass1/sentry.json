@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "sentry",
+    "one_liner": "Sentry provides a web API to manage account-level resources, organizations, teams, and data with support for token and OAuth2 authentication.",
+    "auth_methods": [
+      "bearer_token",
+      "oauth2",
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient information in the provided sources regarding test/ship access tiers or MCP availability.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.sentry.io/api/auth/",
+        "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API. ... For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.sentry.io/api/",
+        "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.sentry.io/api/",
+        "quote": "You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.sentry.io/api/",
+    "https://docs.sentry.io/api/auth/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

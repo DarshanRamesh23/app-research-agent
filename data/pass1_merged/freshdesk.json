@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "freshdesk",
+    "one_liner": "Cloud-based customer support platform with a comprehensive REST API for managing tickets, contacts, agents, and helpdesk settings.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-use-freshdesk-api-keys",
+        "quote": "Copy-paste this as required to authenticate third-party solutions.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-use-freshdesk-api-keys",
+        "quote": "Start free trial Learn more",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://support.freshdesk.com/support/solutions/articles/215517-how-to-use-freshdesk-api-keys",
+        "quote": "Freshdesk Sprout Blossom Garden Estate Forest Freshdesk Free Growth Pro Enterprise",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.freshdesk.com/api/",
+        "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.freshdesk.com/api/",
+        "quote": "Tickets Tickets Create a Ticket /api/v2/tickets Create an Outbound Email /api/v2/tickets/outbound_email View a Ticket /api/v2/tickets/[id]",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.freshdesk.com/api/",
+    "https://support.freshdesk.com/support/solutions/articles/215517-how-to-use-freshdesk-api-keys"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

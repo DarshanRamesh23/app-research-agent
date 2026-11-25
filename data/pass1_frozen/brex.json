@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "brex",
+    "one_liner": "Brex offers a REST API for financial data and card management using bearer token authentication generated from the Brex dashboard.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "access_test": "admin_approval",
+    "access_ship": "admin_approval",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "To pass your user token to Brex APIs, add it as a header to your API calls in the following format: Authorization: \"Bearer {{your user_token here}}\"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "Sign in to dashboard.brex.com as an account admin or card admin . Go to Developer > Settings . If your company has not accepted the developer API agreement, please review the terms and conditions.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "Sign in to dashboard.brex.com as an account admin or card admin . Go to Developer > Settings . If your company has not accepted the developer API agreement, please review the terms and conditions.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "Brex currently only offers a production API server at https://api.brex.com . This is the base URL for all API calls.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.brex.com/guides/authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

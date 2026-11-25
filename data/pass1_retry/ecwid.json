@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "ecwid",
+    "one_liner": "Ecwid e-commerce platform API allowing developers to customize storefronts, automate integrations, handle shipping, payments, and manage store data via REST API and OAuth 2.0.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "quote": "There is no test mode in Ecwid API, so we recommend setting up a separate test store.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Build with Ecwid apps Explore our guides and examples to integrate Ecwid Ecommerce",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "quote": "All requests to Ecwid REST API require an access token .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Payment API Connect any payment provider with your Ecwid store Shipping API Calculate online shipping rates at the checkout",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Agents can also search and read this documentation through its MCP server .",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.ecwid.com",
+    "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "https://docs.ecwid.com/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

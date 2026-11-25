@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "liveagent",
+    "one_liner": "Help desk software with live chat, email, AI agents, call center, and API key limits per plan.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "API type and exact endpoint details are not specified in the sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "API keys 1 5 10 Unlimited Let third-party apps retrieve and push data and manage tickets from outside LiveAgent.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "30-day free trial no credit card",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "Starter Per agent \u00b7 up to 15 agents Email and live chat for a small team Black Friday 40% off Offer price $9",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "MCP server AI \u2014 Not included \u2014 Not included Included Included MCP (Model Context Protocol) is an open standard for connecting AI tools to other software.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.liveagent.com/pricing/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

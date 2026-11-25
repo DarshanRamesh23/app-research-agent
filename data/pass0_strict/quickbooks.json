@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "quickbooks",
+    "one_liner": "QuickBooks Online provides a REST API utilizing OAuth 2.0 for accounting and financial integrations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient documentation details provided in sources to determine access models and API breadth.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "quote": "OAuth 2.0 is the industry-standard protocol for authorization.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account",
+        "quote": "The Account entity represents the ledger accounts",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found",
+    "api_type:quote_not_found"
+  ],
+  "sources": [
+    "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+    "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

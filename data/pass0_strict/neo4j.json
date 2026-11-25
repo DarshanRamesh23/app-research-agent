@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "neo4j",
+    "one_liner": "Neo4j provides a graph database platform and ecosystem with cloud and self-managed deployment options, APIs, query libraries, and developer documentation.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "community",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Authentication details not specified in the documentation.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required Start learning with access to all graph tools",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Professional Build Production-Ready Apps Starting at $0.09 /GB/hour* (minimum 1GB instance)",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "Query API Included GraphQL Library Included",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required Start learning with access to all graph tools",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "BUILD WITH AI AI + graph GraphRAG Agent memory Model Context Protocol (MCP)",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://neo4j.com/docs/",
+    "https://neo4j.com/docs/getting-started/",
+    "https://neo4j.com/pricing/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

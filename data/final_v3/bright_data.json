@@ -1,0 +1,86 @@
+{
+  "record": {
+    "id": "bright_data",
+    "one_liner": "Bright Data provides proxy and web data collection infrastructure with API access via API keys and native proxy protocol authentication.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.brightdata.com/api-reference/authentication",
+        "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.brightdata.com/api-reference/authentication",
+        "quote": "curl --request POST \\\n --url https://api.brightdata.com/request \\\n --header 'Authorization: Bearer <token>'",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://docs.brightdata.com/api-reference/authentication",
+        "quote": "Agent API keys authenticate the Bright Data MCP server and AI agents.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The page states Bright Data uses API Access with an API key and Native Access with proxy username and password, but does not explicitly mention HTTP basic authentication."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation demonstrates a standard REST API endpoint accessed via HTTP POST requests using cURL."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly references 'the Bright Data MCP server' authenticating with Agent API keys."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "api_key",
+        "basic"
+      ],
+      "after": [
+        "api_key"
+      ],
+      "l2": "unverifiable",
+      "reason": "The page states Bright Data uses API Access with an API key and Native Access with proxy username and password, but does not explicitly mention HTTP basic authentication.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.brightdata.com/api-reference/authentication",
+    "https://docs.brightdata.com/api-reference/authentication"
+  ],
+  "rules": []
+}

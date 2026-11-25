@@ -1,0 +1,92 @@
+{
+  "record": {
+    "id": "amazon_selling_partner",
+    "one_liner": "Programmatic access to the Amazon catalog for searching and retrieving item information.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer-docs.amazon/sp-api/docs/catalog-items-api-v2022-04-01-reference",
+        "quote": "searchCatalogItems GET /catalog/2022-04-01/items",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "blocked"
+  },
+  "l2": {
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The reference documentation details HTTP GET operations, JSON data formats, and URL paths standard for a REST API."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided page details only the Catalog Items API endpoints and does not state or settle the overall API breadth for Amazon Selling Partner."
+    },
+    "official_mcp": {
+      "verdict": "unverifiable",
+      "reason": "The provided page contains no mention of Model Context Protocol (MCP) or official MCP server availability."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "api_breadth",
+      "before": "narrow",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided page details only the Catalog Items API endpoints and does not state or settle the overall API breadth for Amazon Selling Partner.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "official_mcp",
+      "before": "no",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided page contains no mention of Model Context Protocol (MCP) or official MCP server availability.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/docs/catalog-items-api-v2022-04-01-reference"
+  ]
+}

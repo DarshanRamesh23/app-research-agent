@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "youtube_transcript",
+    "one_liner": "A YouTube Transcript API and MCP integration providing transcripts, search, channels, and playlists.",
+    "auth_methods": [
+      "bearer_token",
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://transcriptapi.com/",
+        "quote": "curl \" https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ&format=json \" \\\n -H \" Authorization: Bearer API_KEY \"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://transcriptapi.com/",
+        "quote": "100 free credits to try the API \u2014 no card required. Get started free",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://transcriptapi.com/",
+        "quote": "Monthly $5.00 /month Includes: 1,000 credits per month Top-ups at $2.50 per 1K",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://transcriptapi.com/",
+        "quote": "Get transcripts, search videos, browse channels, and extract playlists via REST API or YouTube MCP \u2014 at scale.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://transcriptapi.com/",
+        "quote": "Transcripts, search, channels, playlists \u2014 all in one place.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://transcriptapi.com/",
+        "quote": "YouTube MCP For ChatGPT, Claude, Cursor, VS Code, and 20+ clients Give your AI assistant YouTube access.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://transcriptapi.com/",
+    "https://transcriptapi.com/docs/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

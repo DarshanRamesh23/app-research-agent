@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "attio",
+    "one_liner": "Attio provides a flexible CRM platform with a REST API, OAuth 2.0 / API key authentication, App SDK, and Model Context Protocol (MCP) support.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "bearer_token",
+      "basic"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "There are two ways to generate an access token: By implementing an OAuth 2.0 flow By generating an API key for your workspace",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://attio.com/pricing",
+        "quote": "Start for free with plans for every stage of growth, whether startup or enterprise.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://attio.com/pricing",
+        "quote": "Start for free with plans for every stage of growth, whether startup or enterprise.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "In order to make requests to the Attio REST API, you need to generate an access token.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://attio.com/pricing",
+        "quote": "API and webhooks Free Plus Pro Ultra MCP server Free Plus Pro Ultra App SDK Free Plus Pro Ultra Apps and integrations Free Plus Pro Ultra Mobile apps Free Plus Pro Ultra",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every plan includes the Attio MCP server, which connects AI tools that support the Model Context Protocol, such as Claude and ChatGPT, to your workspace.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.attio.com/rest-api/guides/authentication",
+    "https://docs.attio.com/rest-api/guides/authentication.md",
+    "https://attio.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

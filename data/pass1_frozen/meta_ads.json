@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "meta_ads",
+    "one_liner": "Meta's Marketing API is a collection of Graph API endpoints and features used to create, manage, and optimize ad campaigns across Meta technologies.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Authentication and access credentials details require external Meta Developer registration and token flows not fully detailed in the provided text.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+        "quote": "Authentication See Authentication for more information on getting, extending, and renewing access tokens with the Marketing API.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+        "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+        "quote": "Begin creating and managing Meta ad campaigns by following step-by-step guidance on setting up campaigns, ad sets, and creatives using the Marketing API",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found:['oauth2']"
+  ],
+  "sources": [
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

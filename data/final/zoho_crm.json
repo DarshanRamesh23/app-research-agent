@@ -1,0 +1,71 @@
+{
+  "record": {
+    "id": "zoho_crm",
+    "one_liner": "Zoho CRM provides a robust RESTful API leveraging OAuth 2.0 for third-party integrations, CRUD operations, bulk data handling, and notifications.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v2/oauth-overview.html",
+        "quote": "The Zoho CRM API uses the OAuth2.0 protocol for authentication.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v2/",
+        "quote": "Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v2/",
+        "quote": "Entity APIs Perform CRUD operations on CRM module entities and integrate with any third party application through flexible RESTful endpoints. Bulk APIs Push and retrieve data from Zoho CRM in bulk using a set of asynchronous APIs. Notification APIs Get notified whenever a data change occurs inside your CRM. Query APIs Fetch records using the SELECT query (SQL syntax) from Zoho CRM.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The provided page explicitly states that the Zoho CRM API uses the OAuth2.0 protocol for authentication."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation states that the API integrates through flexible RESTful endpoints."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation lists multiple API types including Entity APIs, Bulk APIs, Notification APIs, and Query APIs, demonstrating a broad feature set."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://www.zoho.com/crm/developer/docs/api/v2/oauth-overview.html",
+    "https://www.zoho.com/crm/developer/docs/api/v2/"
+  ]
+}

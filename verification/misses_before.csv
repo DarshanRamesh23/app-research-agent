@@ -1,0 +1,34 @@
+app,field,truth,pass1_said,final_v2_said,final_v3_said,pass1_result,final_v2_result,final_v3_result,l2_verdict,l2_reason
+zendesk,auth_methods,"['oauth2', 'api_key', 'basic']",['unknown'],['unknown'],['unknown'],abstain,abstain,abstain,,
+zendesk,access_ship,admin_approval,paid_plan,paid_plan,paid_plan,wrong,wrong,wrong,supported,The pricing page outlines paid subscription plans per agent/month required for utilizing the platform and features.
+twilio,auth_methods,"['basic', 'api_key']",,,['api_key'],abstain,abstain,wrong,unverifiable,"While the pages mention API keys, they do not mention basic authentication as an authentication method."
+twilio,access_test,free_trial,,,unknown,abstain,abstain,abstain,,
+twilio,access_ship,free_trial,,,unknown,abstain,abstain,abstain,,
+twilio,api_type,rest,,,rest,abstain,abstain,correct,supported,The documentation explicitly states that Twilio APIs are organized around REST.
+twilio,official_mcp,yes,,,unknown,abstain,abstain,abstain,,
+telegram,auth_methods,['api_key'],['other'],['other'],['other'],wrong,wrong,wrong,supported,"The pages show alternative login flows including QR code, passkey, and sending verification codes, fitting 'other'."
+telegram,official_mcp,community,no,unknown,unknown,wrong,abstain,abstain,supported,There is no mention of an official Model Context Protocol (MCP) server provided by the vendor.
+shopify,auth_methods,['oauth2'],"['oauth2', 'bearer_token', 'jwt']","['oauth2', 'bearer_token', 'jwt']","['oauth2', 'bearer_token', 'jwt']",wrong,wrong,wrong,supported,"The documentation explicitly lists token exchange, authorization code grant, and client credentials grant as the three grants supported by Shopify."
+shopify,access_ship,admin_approval,free_self_serve,free_self_serve,free_self_serve,wrong,wrong,wrong,supported,The text states that publishing your app in the Shopify App Store allows any merchant to install it once it passes review.
+shopify,api_type,both,graphql,graphql,graphql,wrong,wrong,wrong,supported,The text confirms that Shopify apps call the GraphQL Admin API.
+firecrawl,auth_methods,"['api_key', 'bearer_token', 'oauth2']","['bearer_token', 'none']","['bearer_token', 'none']","['bearer_token', 'none']",wrong,wrong,wrong,supported,"The documentation states that no account or API key is required, and optionally a Bearer token can be added via the Authorization header."
+sherlock,access_test,no_api,free_self_serve,no_api,no_api,wrong,correct,correct,supported,The pages show free self-serve installation methods such as pipx install sherlock-project.
+sherlock,access_ship,no_api,free_self_serve,no_api,no_api,wrong,correct,correct,unverifiable,"The pages do not mention app review, partner programs, or paid plans required for publishing or customer access."
+sherlock,official_mcp,community,no,unknown,unknown,wrong,abstain,abstain,supported,There is no mention of an official Model Context Protocol server provided by the vendor.
+github,auth_methods,"['oauth2', 'bearer_token']","['oauth2', 'basic', 'bearer_token', 'jwt']","['oauth2', 'basic', 'bearer_token', 'jwt']","['oauth2', 'basic', 'bearer_token', 'jwt']",wrong,wrong,wrong,supported,"The pages explicitly reference using bearer tokens, JSON web tokens (JWT), basic authentication, and OAuth apps."
+github,access_test,free_self_serve,unknown,unknown,unknown,abstain,abstain,abstain,,
+github,access_ship,free_self_serve,unknown,unknown,unknown,abstain,abstain,abstain,,
+github,api_type,both,rest,rest,rest,wrong,wrong,wrong,supported,The pages explicitly document the GitHub REST API.
+github,official_mcp,yes,unknown,unknown,unknown,abstain,abstain,abstain,,
+cloudflare,api_type,both,rest,rest,rest,wrong,wrong,wrong,supported,"The documentation explicitly references standard HTTP methods like GET, POST, PUT, and DELETE for REST endpoints."
+cloudflare,official_mcp,yes,no,unknown,unknown,wrong,abstain,abstain,supported,There is no mention of an official Model Context Protocol server published by Cloudflare in the provided pages.
+notion,auth_methods,"['bearer_token', 'oauth2']",['unknown'],['unknown'],['unknown'],abstain,abstain,abstain,,
+notion,official_mcp,yes,unknown,unknown,unknown,abstain,abstain,abstain,,
+jira,auth_methods,"['oauth2', 'basic', 'api_key']","['oauth2', 'basic', 'jwt']","['oauth2', 'basic', 'jwt']","['oauth2', 'basic', 'jwt']",wrong,wrong,wrong,supported,"The documentation lists OAuth 2.0 (3LO), basic authentication, and JWT-based authentication for Connect apps."
+jira,access_ship,admin_approval,paid_plan,unknown,unknown,wrong,abstain,abstain,unverifiable,"The provided text discusses development mode and installing app descriptors, but does not state that publishing requires a paid plan."
+jira,official_mcp,yes,no,unknown,unknown,wrong,abstain,abstain,supported,The provided pages contain no mention of an official Model Context Protocol (MCP) server.
+stripe,auth_methods,"['api_key', 'bearer_token', 'oauth2']","['api_key', 'basic', 'bearer_token']","['api_key', 'basic', 'bearer_token']","['api_key', 'basic', 'bearer_token']",wrong,wrong,wrong,supported,"The documentation explicitly confirms API keys, HTTP Basic Auth, and bearer token authentication."
+stripe,access_ship,admin_approval,free_self_serve,free_self_serve,free_self_serve,wrong,wrong,wrong,unverifiable,"The provided pages mention standard pay-as-you-go pricing and 'Request an invite', but do not confirm whether publishing an integration is completely free self-serve."
+mermaid_cli,access_test,no_api,free_self_serve,free_self_serve,free_self_serve,wrong,wrong,wrong,supported,Developers can install the package via npm for free to test it.
+mermaid_cli,access_ship,no_api,free_self_serve,free_self_serve,free_self_serve,wrong,wrong,wrong,supported,The CLI and Node.js API can be freely installed and used via npm or Docker without commercial restrictions.
+mermaid_cli,api_type,cli_only,sdk_only,sdk_only,sdk_only,wrong,wrong,wrong,supported,The documentation explicitly describes calling mermaid-cli via a Node.JS API.

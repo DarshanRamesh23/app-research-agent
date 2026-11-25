@@ -1,0 +1,84 @@
+{
+  "record": {
+    "id": "front",
+    "one_liner": "A customer communication platform offering a Core API, Plugin SDK, Channels API, and MCP servers for building custom integrations, messaging channels, and AI workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "ship_path_unverified",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://dev.frontapp.com/docs/authentication",
+        "quote": "The Core API uses Bearer tokens to authenticate its user. You MUST send the token for each request in the Authorization header. The token MUST be preceded by Bearer . See the Authorization header in the example request below. cURL curl --request GET \\ --url https://api2.frontapp.com/conversations/cnv_123/drafts --header 'Authorization: Bearer [REQUEST_TOKEN]' OAuth v Front API Tokens There are two ways to get a Bearer token \u2014 through API tokens in your settings or through an OAuth implementation .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "You can create a developer account by signing up here . You\u2019ll get access to a free developer environment that will provide everything you need to begin building with our APIs.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "If you are building an app for use in a specific customer instance, creating a separate developer account is optional. The production account, however, will ultimately be where you want your app to live for your company to use it.",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "Core API Sync data between Front and external systems and perform backend operations that retrieve, create, modify, or delete resources in Front.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "Our primary backend API that allows you to read, create, update, and delete a wide range of data across Front\u2019s various entities, from Contacts to Comments to Tags.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "MCP Server Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation states that the Core API uses Bearer tokens obtained via API tokens or an OAuth implementation."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states you get access to a free developer environment by signing up for a developer account."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The Core API is described as syncing data and performing backend operations that retrieve, create, modify, or delete resources, fitting a REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The Core API is described as allowing you to read, create, update, and delete a wide range of data across Front's various entities."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation details an MCP Server provided by Front to access Front data and actions through the MCP protocol."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "access_ship:quote_not_found:paid_plan"
+  ],
+  "sources": [
+    "https://dev.frontapp.com/docs/welcome",
+    "https://dev.frontapp.com/docs/authentication"
+  ],
+  "rules": []
+}

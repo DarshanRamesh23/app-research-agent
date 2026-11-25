@@ -1,0 +1,82 @@
+{
+  "record": {
+    "id": "pylon",
+    "one_liner": "Pylon is an omnichannel customer support platform for B2B teams that integrates messaging channels like Slack, Teams, email, and WhatsApp into a single queue, offering a REST API, SDKs, and a CLI for programmatic access.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "access_test": "paid_plan",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "quote": "The Pylon API uses Bearer authentication. This means you\u2019ll need to pass your API token in the header of your request: Copy Authorization: Bearer <token>",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Professional $89/seat on an annual contract... REST API \u2713",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Professional $89/seat on an annual contract... REST API \u2713",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Developer platform Features Professional Pro Advanced Adv Enterprise Ent REST API \u2713",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+        "quote": "Pylon\u2019s API can be used to programmatically access and take action on data within Pylon.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Pylon MCP server \u2713",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that the Pylon API uses Bearer authentication with an API token in the Authorization header."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pricing page confirms that REST API access is included starting on the paid Professional plan."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The pricing page confirms that REST API access is available starting on the paid Professional plan."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pricing page feature matrix explicitly lists REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation states the API can be used to programmatically access and take action on data across Pylon, including customers and issues."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [],
+  "flags": [
+    "official_mcp:quote_not_found:yes"
+  ],
+  "sources": [
+    "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "https://docs.usepylon.com/pylon-docs/developer/api",
+    "https://www.usepylon.com/pricing"
+  ]
+}

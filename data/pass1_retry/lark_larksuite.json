@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "lark_larksuite",
+    "one_liner": "Lark (Larksuite) provides an open platform with server APIs requiring access tokens for integration.",
+    "auth_methods": [
+      "bearer_token",
+      "other"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient documentation sources to determine full API breadth, shipping requirements, and testing access.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+        "quote": "\u81ea\u5efa\u5e94\u7528\u901a\u8fc7\u6b64\u63a5\u53e3\u83b7\u53d6 tenant_access_token\u3002",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+        "quote": "HTTP URL | https://open.larksuite.com/open-apis/auth/v3/tenant_access_token/internal",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://open.larksuite.com/document/ukTMukTMukTM/ukDNz4SO0MjL5QzM/auth-v3/auth/tenant_access_token_internal.md",
+    "https://open.larksuite.com/document/home/index",
+    "https://open.larksuite.com/document/uAjLw4CM/ukTMukTM4UTL5ATM",
+    "https://open.larksuite.com/document/server-docs/authentication-management/access-token/overview"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "jira",
+    "one_liner": "Jira provides a broad REST API and developer tools for building apps and integrations using various authentication methods.",
+    "auth_methods": [
+      "oauth2",
+      "basic",
+      "jwt"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "For integrations that are not Forge or Connect apps, use OAuth 2.0 authorization code grants (3LO) for security (3LO scopes are shown as for operations OAuth scopes required ). See OAuth 2.0 (3LO) apps for details... For personal scripts, bots, and ad-hoc execution of the REST APIs use basic authentication... For Connect apps, authentication (JWT-based) is built into the Connect libraries.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/",
+        "quote": "The Cloud Developer Bundle provides a free Atlassian cloud development site for building and testing apps. To create your site: Go to go.atlassian.com/cloud-dev and sign up.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/",
+        "quote": "With development mode you can install app descriptors in your development site from any public URL. This means you don't need to list an app in the Atlassian Marketplace before installing it.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "The Jira REST API enables you to interact with Jira programmatically. Use this API to build apps , script interactions with Jira, or develop any other type of integration. This page documents the REST resources available in Jira Cloud",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "This page documents the version 3 of the Jira Cloud platform REST API... Dashboard, Filters, Issue attachments, Issue comments, Issues, Projects, Workflows...",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_breadth:quote_not_found:broad",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer.atlassian.com/cloud/jira/platform/getting-started-with-connect/",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

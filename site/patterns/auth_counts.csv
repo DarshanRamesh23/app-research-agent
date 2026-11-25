@@ -1,0 +1,9 @@
+auth_methods,count
+api_key,22
+basic,6
+bearer_token,17
+jwt,5
+none,21
+oauth2,28
+other,5
+unknown,35

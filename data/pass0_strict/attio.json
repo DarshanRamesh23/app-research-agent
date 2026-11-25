@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "attio",
+    "one_liner": "Attio is a CRM platform with agentic workflows, custom objects, and API/MCP integration capabilities.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Authentication method is not specified in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every new Attio workspace starts with a 14-day free trial of the Pro plan, with access to all Pro features.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://attio.com/pricing",
+        "quote": "Start for free with plans for every stage of growth, whether startup or enterprise.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://attio.com/pricing",
+        "quote": "API and webhooks Free Plus Pro Ultra",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every plan includes the Attio MCP server, which connects AI tools that support the Model Context Protocol, such as Claude and ChatGPT, to your workspace.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://attio.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

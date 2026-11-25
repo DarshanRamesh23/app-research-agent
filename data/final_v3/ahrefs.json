@@ -1,0 +1,102 @@
+{
+  "record": {
+    "id": "ahrefs",
+    "one_liner": "Ahrefs offers developer tools, APIs, and MCP integration to access marketing, SEO, and search data.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "partner_gated",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "partner_program",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "API keys Create and manage your API keys ... OAuth guide Implement OAuth 2.0 authorization",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Free test queries Try API endpoints without an Enterprise plan",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Bring Ahrefs data into third-party apps through our integration program.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "REST API Research keywords, analyze backlinks, track rankings",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly references both API keys and OAuth 2.0 authorization."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation mentions free test queries allowing developers to try API endpoints without an Enterprise plan."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not state whether publishing or shipping to real customers requires a paid plan or integration program approval."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states 'REST API' as the API type."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The text lists several features but does not provide enough benchmark information to confirm the 'medium' breadth rating."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation includes an MCP section showing official setup guides for Claude and ChatGPT using Ahrefs data."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "partner_gated",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not state whether publishing or shipping to real customers requires a paid plan or integration program approval.",
+      "action": "corrected"
+    },
+    {
+      "field": "api_breadth",
+      "before": "medium",
+      "after": "medium",
+      "l2": "unverifiable",
+      "reason": "The text lists several features but does not provide enough benchmark information to confirm the 'medium' breadth rating.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.ahrefs.com",
+    "https://docs.ahrefs.com"
+  ],
+  "rules": []
+}

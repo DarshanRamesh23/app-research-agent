@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "vercel",
+    "one_liner": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "blocked",
+    "blocker": "Missing authentication and access details in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://vercel.com/docs/rest-api",
+        "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://vercel.com/docs/rest-api",
+        "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found:[]"
+  ],
+  "sources": [
+    "https://vercel.com/docs/rest-api",
+    "https://vercel.com/docs/rest-api#authentication",
+    "https://vercel.com/docs/rest-api#getting-started",
+    "https://vercel.com/docs/rest-api#/introduction/pricing",
+    "https://vercel.com/docs/rest-api"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

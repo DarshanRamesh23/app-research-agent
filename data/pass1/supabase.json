@@ -1,0 +1,64 @@
+{
+  "record": {
+    "id": "supabase",
+    "one_liner": "Supabase provides a complete backend platform including a full Postgres database, auto-generated REST APIs, authentication via JWT and OAuth, storage, and edge functions.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "jwt"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "community",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://supabase.com/docs/guides/auth",
+        "quote": "Supabase Auth uses JSON Web Tokens (JWTs) for authentication. For a complete reference of all JWT fields, see the JWT Fields Reference . Auth integrates with Supabase's database features, making it easy to use Row Level Security (RLS) for authorization.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://supabase.com/docs/guides/api",
+        "quote": "Supabase provides a RESTful API using PostgREST , a thin API layer on top of Postgres. It exposes everything you need from a CRUD API at the URL https://<project_ref>.supabase.co/rest/v1/ .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://supabase.com/docs/guides/api",
+        "quote": "The reflected API is designed to retain as much of Postgres' capability as possible including: Basic CRUD operations (Create/Read/Update/Delete) Arbitrarily deep relationships among tables/views, functions that return table types can also nest related tables/views.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://supabase.com/docs",
+        "quote": "Install the Supabase Plugin with npx plugins add supabase-community/supabase-plugin .",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "access_test:quote_not_found:free_self_serve",
+    "access_ship:quote_not_found:free_self_serve"
+  ],
+  "sources": [
+    "https://supabase.com/docs",
+    "https://supabase.com/docs/guides/auth",
+    "https://supabase.com/docs/guides/auth/social-sign-in/auth-google",
+    "https://supabase.com/docs/reference/javascript/introduction",
+    "https://supabase.com/docs/guides/api",
+    "https://supabase.com/docs/guides/getting-started"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

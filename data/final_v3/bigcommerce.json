@@ -1,0 +1,90 @@
+{
+  "record": {
+    "id": "bigcommerce",
+    "one_liner": "BigCommerce offers a suite of REST and GraphQL APIs using OAuth and JWT authentication to manage store data, authenticate customers, and build apps.",
+    "auth_methods": [
+      "oauth2",
+      "jwt"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "quote": "BigCommerce offers a suite of APIs that let you manage store data, sign customers in, make client-side queries for product information, and write apps that integrate third-party services into store operations.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages mention OAuth-based accounts, access tokens, X-Auth-Token, and JWTs, but do not mention api_key or bearer_token."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pages explicitly document both REST APIs (such as REST Store Management APIs) and GraphQL APIs (such as GraphQL Storefront API)."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The pages detail a wide range of APIs covering store management, customer authentication, frontend queries, carts, checkouts, and backend integrations."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "oauth2",
+        "jwt",
+        "api_key",
+        "bearer_token"
+      ],
+      "after": [
+        "oauth2",
+        "jwt"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided pages mention OAuth-based accounts, access tokens, X-Auth-Token, and JWTs, but do not mention api_key or bearer_token.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  ]
+}

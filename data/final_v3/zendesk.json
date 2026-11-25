@@ -1,0 +1,86 @@
+{
+  "record": {
+    "id": "zendesk",
+    "one_liner": "Open and flexible customer service platform with robust REST APIs and SDKs for ticketing, messaging, help center, and custom data integration.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developer.zendesk.com/documentation/",
+        "quote": "Try out the Sunshine Platform with a free, 14-day trial account.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.zendesk.com/in/pricing/#georedirect",
+        "quote": "Zendesk pricing is primarily seat-based (per agent, per month) with plan tiers that include different features.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.zendesk.com/documentation/",
+        "quote": "Zendesk's APIs are organized around REST principles. Our APIs have resource-oriented URLs, accepts form-encoded request bodies and return JSON-encoded responses.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.zendesk.com/api-reference/",
+        "quote": "Most of our APIs are organized by product capabilities. You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span capabilities, such as omnichannel routing and custom data.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation states to try out the Sunshine Platform with a free, 14-day trial account."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The pricing page outlines paid subscription plans per agent/month required for utilizing the platform and features."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that Zendesk's APIs are organized around REST principles."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The API reference confirms that APIs cover ticketing, help center, live chat, voice, sales CRM, and cross-capability features."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "There is no mention of an official Model Context Protocol server provided by Zendesk in the documentation."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer.zendesk.com/documentation/",
+    "https://developer.zendesk.com/api-reference/",
+    "https://www.zendesk.com/in/pricing/#georedirect",
+    "https://github.com/zendesk"
+  ],
+  "rules": [
+    "R2:official_mcp"
+  ]
+}

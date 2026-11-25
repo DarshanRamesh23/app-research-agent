@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "shopify",
+    "one_liner": "Shopify is an ecommerce platform offering extensive APIs (primarily GraphQL Admin and Storefront APIs), developer tools like Shopify CLI, and OAuth-based authentication for building integrated apps.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "graphql",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "quote": "Shopify supports three, and which one applies depends on where your app runs and whose stores it acts on: Token exchange... Authorization code grant... Client credentials grant... A short-lived JWT that proves a request comes from an authenticated Shopify user.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "Dev stores are stores with test data that you build and test against.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://shopify.dev/docs/apps/build",
+        "quote": "Publish your app in the Shopify App Store and any merchant can install it once it passes review.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "quote": "Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://shopify.dev/docs/apps/build",
+    "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "https://shopify.dev/docs/api"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,80 @@
+{
+  "record": {
+    "id": "smartsheet",
+    "one_liner": "Smartsheet provides an official API, SDKs, and MCP server to build and integrate with Smartsheet data.",
+    "auth_methods": [
+      "basic"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://smartsheet.redoc.ly/",
+        "quote": "HTTP HTTP Authorization Scheme basic",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://smartsheet.redoc.ly/",
+        "quote": "Smartsheet - Official API and SDK Documentation",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://developers.smartsheet.com/",
+        "quote": "Explore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page explicitly lists the HTTP authorization scheme as basic."
+    },
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "Neither provided page explicitly states that the API type is REST."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The developer portal explicitly invites users to connect to their own Smartsheet MCP server."
+    }
+  },
+  "l2_model": "gemini-3.7-flash",
+  "changes": [
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "Neither provided page explicitly states that the API type is REST.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://smartsheet.redoc.ly/",
+    "https://developers.smartsheet.com/"
+  ]
+}

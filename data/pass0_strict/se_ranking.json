@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "se_ranking",
+    "one_liner": "SE Ranking offers an SEO API for keyword research, backlink analysis, domain research, site audits, and rank tracking, delivering structured JSON responses alongside an MCP server for AI assistants.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://seranking.com/api.html",
+        "quote": "Just log in to your SE Ranking account, navigate to the API tab under the Settings section, and retrieve your unique API key. Once you have your API key, you can use it for different purposes.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://seranking.com/api.html",
+        "quote": "You can even test it in the free trial account.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://seranking.com/api.html",
+        "quote": "API access comes with any SE Ranking plan (Core at $129/mo and Growth at $279/mo).",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://seranking.com/api.html",
+        "quote": "SE Ranking doesn\u2019t currently offer first-party SDKs and integration is done via the REST API reference and a Postman collection for endpoint testing.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://seranking.com/api.html",
+        "quote": "The Data API covers keyword research, backlink analysis, domain performance, SERP data, site audits, and AI visibility research. The Project API lets you manage and automate SEO workflows within the platform",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://seranking.com/api.html",
+        "quote": "SE Ranking\u2019s MCP server connects SE Ranking\u2019s data directly to AI assistants like Claude, Codex, Gemini, Cursor, and any other client.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://seranking.com/api.html"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

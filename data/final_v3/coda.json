@@ -1,0 +1,112 @@
+{
+  "record": {
+    "id": "coda",
+    "one_liner": "A REST API for interacting with Superhuman Docs (formerly Coda) to manage documents, pages, tables, rows, and automations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "The Superhuman Docs REST API is designed to be straightforward to use.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda): List and search documents Create new docs and copy existing ones Share and publish docs Discover pages, tables, formulas, and controls Read, insert, upsert, update, and delete rows",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.superhuman.com/developers/apis/v1",
+        "quote": "If you plan to integrate Superhuman Docs with an AI tool, you may also want to consider using the Superhuman Docs MCP server .",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or list the supported authentication methods."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or details settling API test access."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or details settling API deployment and usage access."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly describes the API as a REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation lists broad functionality covering docs, sharing permissions, pages, tables, rows, formulas, and controls."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation directly recommends using the official Superhuman Docs MCP server for AI integrations."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "bearer_token",
+        "api_key"
+      ],
+      "after": [
+        "unknown"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or list the supported authentication methods.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "access_test",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or details settling API test access.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided page text does not contain the quoted statement or details settling API deployment and usage access.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.superhuman.com/developers/apis/v1"
+  ]
+}

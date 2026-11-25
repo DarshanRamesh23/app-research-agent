@@ -1,0 +1,93 @@
+{
+  "record": {
+    "id": "clickup",
+    "one_liner": "ClickUp offers a Public API, OAuth, Webhooks, and an official MCP Server for building integrations and connecting AI assistants.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.clickup.com",
+        "quote": "OAuth Let people sign into their ClickUp account.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.clickup.com",
+        "quote": "Browse our Public API specification.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://developer.clickup.com",
+        "quote": "Connect your AI with ClickUp using our MCP Server.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions OAuth, but does not explicitly specify OAuth 2.0 or oauth2."
+    },
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The text refers to a Public API specification but does not explicitly mention that it is a REST API."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page explicitly states 'Connect your AI with ClickUp using our MCP Server', confirming an official MCP server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "oauth2"
+      ],
+      "after": [
+        "oauth2"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided text mentions OAuth, but does not explicitly specify OAuth 2.0 or oauth2.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "The text refers to a Public API specification but does not explicitly mention that it is a REST API.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developer.clickup.com",
+    "https://doc.clickup.com/d/h/ad-146316/8966eefcd01dfb3",
+    "https://doc.clickup.com/d/h/ad-131019/33df70c534062cd"
+  ]
+}

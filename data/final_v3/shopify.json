@@ -1,0 +1,87 @@
+{
+  "record": {
+    "id": "shopify",
+    "one_liner": "Shopify is an e-commerce platform offering extensive APIs (including GraphQL Admin and Storefront APIs) and development tools to build apps, storefronts, and extensions.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token",
+      "jwt"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "graphql",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "quote": "Shopify supports three, and which one applies depends on where your app runs and whose stores it acts on: Token exchange... Authorization code grant... Client credentials grant... A short-lived JWT that proves a request comes from an authenticated Shopify user... Your app sends the token in the X-Shopify-Access-Token header on every GraphQL Admin API request.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "Dev stores are stores with test data that you build and test against.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://shopify.dev/docs/apps/build",
+        "quote": "Publish your app in the Shopify App Store and any merchant can install it once it passes review.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "quote": "Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://shopify.dev/docs/api",
+        "quote": "Shopify MCP lets merchants and partners set up and manage a store through the AI agent of their choice.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly lists token exchange, authorization code grant, and client credentials grant as the three grants supported by Shopify."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The text states that dev stores are used with test data to build and test against."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The text states that publishing your app in the Shopify App Store allows any merchant to install it once it passes review."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The text confirms that Shopify apps call the GraphQL Admin API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation provides reference documentation for Shopify's APIs, libraries, developer tools, and concepts that apply across all of them."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The text explicitly mentions Shopify MCP as a feature allowing setup and management through an AI agent."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://shopify.dev/docs/apps/build",
+    "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "https://shopify.dev/docs/api"
+  ],
+  "rules": []
+}

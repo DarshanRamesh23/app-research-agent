@@ -1,0 +1,75 @@
+{
+  "record": {
+    "id": "mailchimp",
+    "one_liner": "Mailchimp provides Marketing and Transactional APIs to power timely, relevant marketing campaigns and event-driven messages.",
+    "auth_methods": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://mailchimp.com/developer/marketing/api/root/list",
+        "quote": "Authorization Bearer Authorization using a Mailchimp API key (a.k.a. Bearer token) OR Authorization Bearer Authorization using OAuth",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://mailchimp.com/developer/",
+        "quote": "Developing the integration using the Mailchimp API 3.0 was a good experience",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://mailchimp.com/developer/",
+        "quote": "Mailchimp\u2019s developer tools provide everything you need to integrate your data with intelligent marketing tools and event-driven transactional email and SMS.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states authorization can be done using a Mailchimp API key (Bearer token) or OAuth."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pages reference developing integrations using the Mailchimp API 3.0."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The text states that Mailchimp provides developer tools to integrate data with marketing tools, transactional email, and SMS."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://mailchimp.com/developer/",
+    "https://mailchimp.com/developer/marketing/build/start-developing/send-your-first-api-request",
+    "https://mailchimp.com/developer/marketing/api/root/list"
+  ],
+  "rules": []
+}

@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "sherlock",
+    "one_liner": "Hunt down social media accounts by username across social networks",
+    "auth_methods": [
+      "none"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "cli_only",
+    "api_breadth": "unknown",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "tool is a CLI utility rather than a programmable API",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "Hunt down social media accounts by username across social networks",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "pipx install sherlock-project",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "License MIT \u00a9 Sherlock Project",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "quote": "To search for only one user: sherlock user123",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://github.com/sherlock-project/sherlock",
+    "https://github.com/sherlock-project/sherlock#installation",
+    "https://github.com/sherlock-project/sherlock#usage"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

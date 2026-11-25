@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "vonage",
+    "one_liner": "Vonage provides a suite of communication APIs enabling developers to integrate voice, messaging, and video capabilities using standard webhooks, SDKs, and REST mechanisms.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "quote": "Vonage APIs support different authentication methods depending on which product you are using: API Key and Secret (Header) JSON Web Token (JWT) ... SIP Trunking uses Digest Authentication method with the API Key as user and API Secret as password.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "If you are familiar with the command-line tool Curl , you will find Curl snippets for each of our APIs that you can copy, paste and modify.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "quote": "Accounts Application Audit Channel Manager Conversation Conversion Device Location Retrieval Dispatch External Accounts Identity Insights Media Messages 1 Numbers Number Insight Pricing v1 Pricing v2 Programmable SIP Quality on Demand Redact Reports SMS Verify (Legacy) Verify 2 Voice 3 Video",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Welcome to the Vonage API platform! Vonage provides a suite of APIs that enable you to communicate with your customers using your preferred channels.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://developer.vonage.com/en/getting-started/overview",
+    "https://developer.vonage.com/en/getting-started/concepts/authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

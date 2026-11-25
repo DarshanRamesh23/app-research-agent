@@ -1,0 +1,67 @@
+{
+  "record": {
+    "id": "magento_adobe_commerce",
+    "one_liner": "Adobe Commerce (Magento) provides REST APIs authenticated via standardized OAuth 2 protocols, including support for server-to-server and user authentication flows.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "quote": "Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "quote": "Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page states that authentication uses standardized OAuth 2 protocols and mentions using the bearer token type for API authorization."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page explicitly discusses authentication for Adobe Commerce as a Cloud Service REST APIs."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://developer.adobe.com/commerce/webapi/rest/authentication/"
+  ]
+}

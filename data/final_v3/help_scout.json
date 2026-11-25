@@ -1,0 +1,84 @@
+{
+  "record": {
+    "id": "help_scout",
+    "one_liner": "Help Scout provides APIs including Inbox, Chat, and Docs for developers to read and write data and build integrations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.helpscout.com/",
+        "quote": "Inbox API - read and write data to Help Scout inboxes Chat API - read and answer live Beacon chats while they are still open Docs API - read and write data to your Docs sites",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.helpscout.com/",
+        "quote": "Apps - display your own content as an internal sidebar application in the Inbox Beacon - live chat, help docs, and a customer portal all in one Inbox API - read and write data to Help Scout inboxes Chat API - read and answer live Beacon chats while they are still open Docs API - read and write data to your Docs sites Webhooks - get notified about activity in Help Scout",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions various APIs but does not explicitly state that they are REST APIs."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided text lists multiple APIs and tools but does not contain a classification of 'medium' for api_breadth."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "The provided text mentions various APIs but does not explicitly state that they are REST APIs.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_breadth",
+      "before": "medium",
+      "after": "medium",
+      "l2": "unverifiable",
+      "reason": "The provided text lists multiple APIs and tools but does not contain a classification of 'medium' for api_breadth.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developer.helpscout.com/"
+  ],
+  "rules": []
+}

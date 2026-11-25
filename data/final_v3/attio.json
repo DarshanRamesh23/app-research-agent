@@ -1,0 +1,104 @@
+{
+  "record": {
+    "id": "attio",
+    "one_liner": "Attio provides a flexible CRM platform with a REST API, OAuth 2.0 / API key authentication, App SDK, and Model Context Protocol (MCP) support.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "bearer_token",
+      "basic"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "There are two ways to generate an access token: By implementing an OAuth 2.0 flow By generating an API key for your workspace",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://attio.com/pricing",
+        "quote": "Start for free with plans for every stage of growth, whether startup or enterprise.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "While you develop your app, it can grant tokens for the workspace it is installed in. To get access tokens for other workspaces, you\u2019ll need to share your app with those workspaces or publish it.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "In order to make requests to the Attio REST API, you need to generate an access token.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "quote": "The possible scopes for OAuth and single-workspace access tokens are the same. The reference documentation for each endpoint includes a \u201cRequired scopes\u201d section that lists the scopes needed to call that endpoint.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every plan includes the Attio MCP server, which connects AI tools that support the Model Context Protocol, such as Claude and ChatGPT, to your workspace.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The authentication page explicitly details OAuth 2.0, single-workspace API keys, Bearer tokens, and HTTP Basic Authentication."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation states API keys and unpublished dev apps can be created and tested within a workspace, and Attio provides a free plan."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The pages mention publishing apps and an approved release process, but do not provide the requirements or tier criteria to publish an integration for all customers."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly specifies that Attio provides a REST API."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not contain information characterizing or measuring the overall breadth of the API."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The pricing page explicitly lists an MCP server as an official vendor-provided platform feature across all plans."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The pages mention publishing apps and an approved release process, but do not provide the requirements or tier criteria to publish an integration for all customers.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_breadth",
+      "before": "broad",
+      "after": "broad",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not contain information characterizing or measuring the overall breadth of the API.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.attio.com/rest-api/guides/authentication",
+    "https://docs.attio.com/rest-api/guides/authentication.md",
+    "https://attio.com/pricing"
+  ]
+}

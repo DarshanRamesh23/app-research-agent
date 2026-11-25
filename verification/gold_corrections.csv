@@ -1,0 +1,9 @@
+app,field,before,after,reason_from_docs,source_url
+zendesk,access_ship,"""admin_approval""","""free_trial""",,https://developer.zendesk.com/api-reference/introduction/security-and-auth/
+shopify,access_ship,"""admin_approval""","""free_self_serve""",,https://shopify.dev/docs/apps/build/authentication-authorization
+shopify,api_type,"""both""","""graphql""",,https://shopify.dev/docs/apps/build/authentication-authorization
+firecrawl,auth_methods,"[""api_key"", ""bearer_token"", ""oauth2""]","[""api_key"", ""oauth2""]",,https://docs.firecrawl.dev/api-reference/introduction
+github,auth_methods,"[""oauth2"", ""bearer_token""]","[""oauth2"", ""bearer_token"", ""jwt"", ""basic""]",,https://docs.github.com/en/rest/authentication
+jira,auth_methods,"[""oauth2"", ""basic"", ""api_key""]","[""oauth2"", ""basic"", ""jwt""]",,https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/
+stripe,auth_methods,"[""api_key"", ""bearer_token"", ""oauth2""]","[""api_key"", ""basic"", ""bearer_token""]",,https://docs.stripe.com/api/authentication
+stripe,access_ship,"""admin_approval""","""free_self_serve""",,https://docs.stripe.com/api/authentication

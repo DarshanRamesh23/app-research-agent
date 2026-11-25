@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "google_ads",
+    "one_liner": "A programmatic interface for managing Google Ads accounts and campaigns, suitable for large or complex setups.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Pricing/access tier requirements (test/ship access models) are not fully specified in the provided text.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "quote": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, allowing your app to access user accounts without handling login information. In addition to OAuth 2.0 credentials, a developer token is also required to make Google Ads API calls.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "quote": "Install a client library or call REST Client libraries Java , .NET , PHP , Python , Ruby , Perl , Code samples , REST interface",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "quote": "The Google Ads API is the programmatic interface to Google Ads, used for managing large or complex Google Ads accounts and campaigns. You can build software that manages accounts from the customer level down to the keyword level.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "quote": "Google Ads MCP server Google Ads API AI agent skills , Google Ads API Developer Assistant",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+    "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "https://developers.google.com/google-ads/api/reference/rpc/v26/overview"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

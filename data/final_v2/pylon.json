@@ -1,0 +1,83 @@
+{
+  "record": {
+    "id": "pylon",
+    "one_liner": "Pylon is an omnichannel B2B customer support platform bringing Slack, Teams, email, and chat into one queue with AI-powered automations and a REST API.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Scoped API Tokens",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Professional $89/seat on an annual contract Book a demo Includes: Viewer seats Core support Out-of-the-box Analytics Automations Skills Broadcasts MCP API Integrations",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "REST API \u2713 \u2713 \u2713",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Pylon MCP server \u2713 \u2713 \u2713",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions API integrations and MCP, but does not state that scoped API tokens are the authentication method."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The pricing page shows that API and MCP integrations are included in the Professional plan, which requires a paid annual subscription."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "api_key"
+      ],
+      "after": [
+        "api_key"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided text mentions API integrations and MCP, but does not state that scoped API tokens are the authentication method.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [
+    "api_type:quote_not_found:rest",
+    "official_mcp:quote_not_found:yes"
+  ],
+  "sources": [
+    "https://www.usepylon.com/pricing"
+  ],
+  "rules": []
+}

@@ -1,0 +1,76 @@
+{
+  "record": {
+    "id": "airtable",
+    "one_liner": "Airtable is a modern database platform providing a web API with SDKs for managing tables, records, and data structures.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions 'Airtable Web API' but does not explicitly state that the API type is REST."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided text mentions 'Airtable Web API' but does not explicitly state that the API type is REST.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [
+    "auth_methods:quote_not_found:[]"
+  ],
+  "sources": [
+    "https://airtable.com/developers/web/api/introduction",
+    "https://airtable.com/developers/web/api/authentication",
+    "https://airtable.com/pricing",
+    "https://github.com/Airtable"
+  ]
+}

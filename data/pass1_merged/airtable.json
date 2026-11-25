@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "airtable",
+    "one_liner": "Airtable is a modern database platform providing a web API with SDKs for managing tables, records, and data structures.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient documentation details in sources to verify authentication schemes, access tiers, and API breadth.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://airtable.com/developers/web/api/introduction",
+        "quote": "Airtable Web API Your browser version is not supported.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found:[]"
+  ],
+  "sources": [
+    "https://airtable.com/developers/web/api/introduction",
+    "https://airtable.com/developers/web/api/authentication",
+    "https://airtable.com/pricing",
+    "https://github.com/Airtable"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

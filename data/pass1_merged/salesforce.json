@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "salesforce",
+    "one_liner": "Salesforce provides an extensive API library allowing client applications to integrate via OAuth 2.0 and REST APIs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient information in sources regarding testing, shipping access, and breadth.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "quote": "Authorization Through External Client Apps or Connected Apps and OAuth 2.0 For a client application to access REST API resources, it must be authorized as a safe visitor. To implement this authorization, use either an external client app or a connected app and an OAuth 2.0 authorization flow.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "quote": "For a client application to access REST API resources, it must be authorized as a safe visitor.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.salesforce.com/docs/apis",
+    "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "https://developer.salesforce.com/signup"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

@@ -1,0 +1,80 @@
+{
+  "record": {
+    "id": "youtube_transcript",
+    "one_liner": "An API and Model Context Protocol (MCP) tool for extracting YouTube video transcripts, search, channel, and playlist data.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Complete guide to transcripts, search, channel, and playlist endpoints with authentication, parameters, and examples.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Complete guide to transcripts, search, channel, and playlist endpoints",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Use TranscriptAPI with Model Context Protocol for seamless integration with AI tools.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly references endpoints and parameters, which indicates a REST API."
+    },
+    "api_breadth": {
+      "verdict": "contradicted",
+      "reason": "The text lists multiple endpoints including transcripts, search, channel, and playlist, which indicates a broad API rather than a narrow one."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page explicitly states to use TranscriptAPI with Model Context Protocol for integration with AI tools."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "api_breadth",
+      "before": "narrow",
+      "after": "broad",
+      "l2": "contradicted",
+      "reason": "The text lists multiple endpoints including transcripts, search, channel, and playlist, which indicates a broad API rather than a narrow one.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://transcriptapi.com/docs/"
+  ],
+  "rules": []
+}

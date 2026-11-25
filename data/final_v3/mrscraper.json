@@ -1,0 +1,92 @@
+{
+  "record": {
+    "id": "mrscraper",
+    "one_liner": "An AI-powered scraping and data extraction platform with APIs, SDKs, proxies, and automation workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "Token Plan Learn how tokens work and create an API token for authentication.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://mrscraper.com/pricing",
+        "quote": "New accounts start with a 7-day free trial and 1,000 tokens. A card is required to start.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://mrscraper.com/pricing",
+        "quote": "Essential $99 /month Enterprise Contact Us Included tokens 200,000 tokens 500k+ tokens",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "API Reference Explore every endpoint, authentication, pagination, and error handling.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "API Reference Explore every endpoint, authentication, pagination, and error handling.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "MCP Server Let AI agents fetch pages and search Google through the Model Context Protocol.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The pages directly state that authentication is performed using an API token."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pricing page explicitly confirms a 7-day free trial with 1,000 tokens for new accounts."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The pricing page details paid subscription options such as the Essential plan at $99/month."
+    },
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions API endpoints but does not explicitly state that the API architecture is REST."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation mentions an API Reference covering endpoints, authentication, pagination, and error handling across various features."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation lists an official MrScraper MCP server available for AI agents under Developer Tools."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "The provided text mentions API endpoints but does not explicitly state that the API architecture is REST.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.mrscraper.com/docs/getting-started/overview",
+    "https://mrscraper.com/pricing"
+  ]
+}

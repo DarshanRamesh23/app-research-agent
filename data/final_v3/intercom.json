@@ -1,0 +1,94 @@
+{
+  "record": {
+    "id": "intercom",
+    "one_liner": "A customer service platform and AI agent suite providing REST APIs, SDKs, and webhook integrations to build public or private messaging and inbox apps.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "admin_approval",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "app_review",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "You can build a private app using your Access Token and it does not require a review.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "To develop a public app you will need to use a development workspace: sign up here to create your free account.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "These apps have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "If you aren't able to find an existing app that solves the problem you're facing, you can build your own using our REST APIs and Canvas Kit framework.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "Messenger Inbox Contacts Tickets Help Center Reporting Using the APIs Webhooks Fin Agent API",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page states you can build a private app using your Access Token and mentions setting up OAuth for public apps."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The text mentions signing up to create a free account to use a development workspace for developing a public app."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The text states that publishing apps requires setting up OAuth and submitting them to the Intercom team for review."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page mentions building your own app using REST APIs and Canvas Kit framework."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly lists Messenger, Inbox, Contacts, Tickets, Help Center, Reporting, Webhooks, and Fin Agent API."
+    },
+    "official_mcp": {
+      "verdict": "unverifiable",
+      "reason": "The text mentions Model Context Protocol (MCP) as a topic, but does not state whether the MCP server is published by the vendor or a third party."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "official_mcp",
+      "before": "community",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The text mentions Model Context Protocol (MCP) as a topic, but does not state whether the MCP server is published by the vendor or a third party.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://www.intercom.com/pricing",
+    "https://developers.intercom.com/docs"
+  ],
+  "rules": []
+}

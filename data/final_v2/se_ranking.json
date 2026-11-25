@@ -1,0 +1,104 @@
+{
+  "record": {
+    "id": "se_ranking",
+    "one_liner": "SE Ranking offers an SEO API for keyword research, backlink analysis, domain analysis, site audits, and rank tracking, returning structured JSON via API keys, plus MCP server support for AI assistants.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://seranking.com/api.html",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://seranking.com/api.html",
+        "quote": "You can even test it in the free trial account.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://seranking.com/api.html",
+        "quote": "API access is included in every SE Ranking plan",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://seranking.com/api.html",
+        "quote": "SE Ranking doesn\u2019t currently offer first-party SDKs and integration is done via the REST API reference and a Postman collection for endpoint testing.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://seranking.com/api.html",
+        "quote": "The Data API covers keyword research, backlink analysis, domain performance, SERP data, site audits, and AI visibility research. The Project API lets you manage and automate SEO workflows within the platform",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://seranking.com/api.html",
+        "quote": "SE Ranking\u2019s MCP server connects SE Ranking\u2019s data directly to AI assistants like Claude, Codex, Gemini, Cursor, and any other client.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions API access and endpoints, but does not state that API keys are retrieved from an API tab under the settings section."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page states you can start a free trial and test the API."
+    },
+    "access_ship": {
+      "verdict": "contradicted",
+      "reason": "The page states that API access is available via pay-as-you-go plans starting at $50 or included in every subscription plan, rather than restricting it solely to Core and Growth plans."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The text confirms integration via REST API (mentioning JSON responses) and the use of Postman collections."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The page details coverage across keyword research, backlinks, domain analysis, website audits, rank tracking, and project management workflows."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page refers directly to SE Ranking's MCP server allowing connections to Claude, Codex, Cursor, and other AI tools."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "api_key"
+      ],
+      "after": [
+        "unknown"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided text mentions API access and endpoints, but does not state that API keys are retrieved from an API tab under the settings section.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "paid_plan",
+      "l2": "contradicted",
+      "reason": "The page states that API access is available via pay-as-you-go plans starting at $50 or included in every subscription plan, rather than restricting it solely to Core and Growth plans.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://seranking.com/api.html"
+  ],
+  "rules": []
+}

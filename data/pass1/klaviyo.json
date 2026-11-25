@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "klaviyo",
+    "one_liner": "Klaviyo API is a JSON:API compliant REST platform enabling read and write access to customer data, profiles, events, campaigns, and lists using private API keys or OAuth.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs).",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "You need a Klaviyo account. To keep test data out of your production account, create a test account first, and use it for every step below.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "Building with an AI agent? See Set up your AI agent to give it these docs as Markdown, the OpenAPI spec and Klaviyo's MCP server.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Accounts 2 endpoints Billing 2 endpoints Brands 25 endpoints Campaigns 59 endpoints Catalogs 55 endpoints Conversations 1 endpoint Coupons 17 endpoints Custom Objects 39 endpoints Data Privacy 1 endpoint Events 8 endpoints Flows 22 endpoints Forms 12 endpoints Images 5 endpoints Lists 13 endpoints Metrics 24 endpoints Profiles 38 endpoints Reporting 7 endpoints Reviews 3 endpoints Segments 11 endpoints Tags 26 endpoints Templates 17 endpoints Text Messaging 9 endpoints Tracking Settings 3 endpoints Translations 13 endpoints Web Feeds 5 endpoints Webhooks 7 endpoints Client 12 endpoints",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "Building with an AI agent? See Set up your AI agent to give it these docs as Markdown, the OpenAPI spec and Klaviyo's MCP server.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.klaviyo.com/en/docs/get_started",
+    "https://developers.klaviyo.com/en/reference"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "squarespace",
+    "one_liner": "Squarespace offers developer APIs, webhooks, and commerce endpoints to build and publish external apps, manage commerce, and handle website and domain reselling.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.squarespace.com/",
+        "quote": "REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.squarespace.com/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

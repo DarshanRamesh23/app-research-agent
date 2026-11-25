@@ -1,0 +1,103 @@
+{
+  "record": {
+    "id": "consensus",
+    "one_liner": "An API providing programmatic access to peer-reviewed research papers, search, metadata, and automated research threads through the Consensus engine.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "Create API key Read the docs How Phylo powers drug discovery with Consensus \u2192 Peer-reviewed research, one API call away.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "GET /v1/search sent 200 Response",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "Two ways to build. Search returns ranked papers in one call. Threads hands the whole research task to the Consensus agent.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page explicitly features a \"Create API key\" button, confirming API key authentication."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided page text does not state whether a paid plan is required to get credentials for testing the API."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The page does not contain details regarding plan requirements for publishing or shipping an integration to real users."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page displays standard REST request formats such as 'GET /v1/search'."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "While Search and Threads features are mentioned, the page does not provide enough documentation to settle the overall API breadth."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "paid_plan",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided page text does not state whether a paid plan is required to get credentials for testing the API.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The page does not contain details regarding plan requirements for publishing or shipping an integration to real users.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "api_breadth",
+      "before": "medium",
+      "after": "medium",
+      "l2": "unverifiable",
+      "reason": "While Search and Threads features are mentioned, the page does not provide enough documentation to settle the overall API breadth.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://consensus.app/home/api/"
+  ]
+}

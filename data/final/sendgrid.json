@@ -1,0 +1,103 @@
+{
+  "record": {
+    "id": "sendgrid",
+    "one_liner": "SendGrid provides a v3 REST API and email services for sending transactional and marketing emails at scale.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "free_trial",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "trial_only",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "quote": "To authenticate access to Twilio SendGrid services, use Application Programming Interface (API) keys.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "quote": "Free trial No credit card required Flexible pricing",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "quote": "Free trial No credit card required Flexible pricing",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid API endpoints allow you to integrate with your tech stack to send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page directly states to use API keys to authenticate access to Twilio SendGrid services."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page mentions a free trial with no credit card required."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The pages mention flexible pricing but do not discuss app review, partner programs, or publishing requirements for real customers."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page explicitly states that the SendGrid v3 Web API provides a REST interface."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The page states endpoints allow sending transactional emails, creating marketing campaigns, managing contacts, and monitoring email statistics."
+    },
+    "official_mcp": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages contain no mention of an MCP server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "free_trial",
+      "l2": "unverifiable",
+      "reason": "The pages mention flexible pricing but do not discuss app review, partner programs, or publishing requirements for real customers.",
+      "action": "corrected"
+    },
+    {
+      "field": "official_mcp",
+      "before": "no",
+      "after": "no",
+      "l2": "unverifiable",
+      "reason": "The provided pages contain no mention of an MCP server.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+    "https://www.twilio.com/docs/sendgrid/api-reference",
+    "https://www.twilio.com/en-us/sendgrid"
+  ]
+}

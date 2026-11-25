@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "mermaid_cli",
+    "one_liner": "Command line interface and Node.JS API for the Mermaid library that takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "cli_only",
+    "api_breadth": "narrow",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "This is a command-line interface (CLI) for mermaid . It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "Installation npm install -g @mermaid-js/mermaid-cli",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "Installation npm install -g @mermaid-js/mermaid-cli",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "This is a command-line interface (CLI) for mermaid . It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "This is a command-line interface (CLI) for mermaid . It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://github.com/mermaid-js/mermaid-cli",
+    "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,10 @@
+.venv/
+.env
+data/cache/
+__pycache__/
+runs/
+data/apps.csv.bak
+data/final_backup/
+data/final_v2_backup/
+*.bak
+data/single/

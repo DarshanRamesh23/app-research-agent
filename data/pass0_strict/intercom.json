@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "intercom",
+    "one_liner": "A suite of SDKs and APIs including a REST API and Canvas Kit framework to build private or public apps and integrations for Intercom.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "admin_approval",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "These apps have access to other peoples' Intercom data, which means there are specific requirements in order to publish them, such as setting up OAuth and submitting to the Intercom team for review.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "To develop a public app you will need to use a development workspace: sign up here to create your free account.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "Once development is done and OAuth is configured, in the Developer Hub of your [Production] app you can choose the listing type , provide installation URLs , and follow the steps outlined in this guide to submit it for review.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.intercom.com/docs",
+        "quote": "If you aren't able to find an existing app that solves the problem you're facing, you can build your own using our REST APIs and Canvas Kit framework.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+        "quote": "Admins AI Content Articles Audiences Auth Tokens Away Status Reasons Banners Brands Calls Companies Contacts Content Content Snippets Conversations Conversations Attributes Custom Object Instances Data Attributes Data Connectors Data Events Data Export Ecommerce Connectors Dynamic Content Emails Fin Agent Folders Help Center Internal Articles IP Allowlist Jobs Macros Messages News Notes Office Hours Reporting Data Export Roles Segments Subscription Types Switch Tags Teams Ticket States Ticket Type Attributes Ticket Types Tickets Visitors WhatsApp Workflows Models",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.intercom.com/pricing",
+    "https://developers.intercom.com/docs",
+    "https://developers.intercom.com/docs/references/rest-api/api.intercom.io"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "gorgias",
+    "one_liner": "Gorgias provides a REST API supporting API key and OAuth2 authentication for private and public apps.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Public shipping requirements are not documented in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.gorgias.com/reference/authentication",
+        "quote": "The Gorgias API supports two authentication methods: \ud83d\udd10 Private app \u2192 API key \ud83d\udc65 Public app \u2192 OAuth2",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.gorgias.com/reference/authentication",
+        "quote": "For testing purposes, you can perform requests directly from the API Reference using your API keys.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_type:quote_not_found"
+  ],
+  "sources": [
+    "https://developer.gorgias.com/",
+    "https://developers.gorgias.com/reference/getting-started",
+    "https://developers.gorgias.com/reference/authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

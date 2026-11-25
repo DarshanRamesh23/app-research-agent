@@ -1,0 +1,91 @@
+{
+  "record": {
+    "id": "discord",
+    "one_liner": "Discord apps let you customize and extend Discord using a collection of APIs and interactive features.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token",
+      "basic"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.discord.com/developers/reference",
+        "quote": "Authenticating with the Discord API can be done in one of three ways: Using a bot token found on the Bot page within your app\u2019s settings. For more information on bots see bots vs user accounts . Using an OAuth2 bearer token gained through the OAuth2 API . Using basic authentication with credentials as the client ID and client secret found on the OAuth2 page of your app\u2019s settings in the format client_id:client_secret as a Base64 encoded string.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.discord.com/developers/quick-start/getting-started",
+        "quote": "First, you\u2019ll need to create an app in the developer portal if you don\u2019t have one already: Enter a name for your app, then press Create .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.discord.com/developers/quick-start/getting-started",
+        "quote": "First, you\u2019ll need to create an app in the developer portal if you don\u2019t have one already: Enter a name for your app, then press Create .",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.discord.com/developers/reference",
+        "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.discord.com/developers/reference",
+        "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications. It\u2019s the primary way to interact with Discord from your own code.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly lists oauth2, bearer token, and basic authentication as the three ways to authenticate with the Discord API."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pages state that you can create an app in the developer portal to begin testing and development."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided text only discusses installing the app to a test server for development purposes and does not cover production app review or publishing."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation states that the Discord API is a REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly describes the REST API as the primary way to interact with Discord from your own code."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided text only discusses installing the app to a test server for development purposes and does not cover production app review or publishing.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.discord.com/developers/quick-start/getting-started",
+    "https://docs.discord.com/developers/topics/oauth2",
+    "https://docs.discord.com/developers/reference"
+  ]
+}

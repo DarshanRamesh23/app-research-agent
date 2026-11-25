@@ -1,0 +1,83 @@
+{
+  "record": {
+    "id": "mermaid_cli",
+    "one_liner": "Command-line interface and Node.js API for Mermaid to generate SVG/PNG/PDF files from mermaid definitions.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "sdk_only",
+    "api_breadth": "narrow",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "sdk_only",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "This is a command-line interface (CLI) for mermaid . It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "Installation npm install -g @mermaid-js/mermaid-cli",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "Installation npm install -g @mermaid-js/mermaid-cli",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "It's possible to call mermaid-cli via a Node.JS API. Please be aware that the NodeJS API is not covered by semver",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "import { run } from \"@mermaid-js/mermaid-cli\" ; await run ( \"input.mmd\" , \"output.svg\"",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md",
+        "quote": "This is a command-line interface (CLI) for mermaid .",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The pages show it is a command-line interface tool taking input definition files and generating graphics without authentication requirements."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "Developers can install the package via npm for free to test it."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The CLI and Node.js API can be freely installed and used via npm or Docker without commercial restrictions."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly describes calling mermaid-cli via a Node.JS API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The Node.JS API example shows a narrow function call using `run` to convert an input file to an output file."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation shows it is a command-line interface for mermaid and does not mention any Model Context Protocol (MCP) server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://github.com/mermaid-js/mermaid-cli/blob/master/README.md"
+  ],
+  "rules": []
+}

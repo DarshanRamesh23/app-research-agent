@@ -1,0 +1,78 @@
+{
+  "n": 100,
+  "no_record": [
+    "aircall",
+    "bigcommerce",
+    "clickup",
+    "coda",
+    "fathom",
+    "hubspot",
+    "linkedin_ads",
+    "mongodb_atlas",
+    "mrscraper",
+    "notebooklm",
+    "otter_ai",
+    "pitchbook",
+    "ramp",
+    "salesforce_commerce_cloud",
+    "snowflake",
+    "twilio",
+    "woocommerce",
+    "zoho_cliq"
+  ],
+  "verdicts": {
+    "green": 15,
+    "yellow": 14,
+    "red": 1,
+    "unknown": 70
+  },
+  "blockers": {
+    "ship_path_unverified": 5,
+    "paid_plan": 3,
+    "app_review": 2,
+    "trial_only": 2,
+    "partner_program": 1,
+    "sdk_only": 1,
+    "no_public_api": 1
+  },
+  "mcp": {
+    "unknown": 77,
+    "yes": 20,
+    "no": 2,
+    "community": 1
+  },
+  "test_free_ship_gated": 5,
+  "easy_wins": [
+    "apify",
+    "clay",
+    "cloudflare",
+    "discord",
+    "firecrawl",
+    "klaviyo",
+    "notion",
+    "plaid",
+    "podio",
+    "sendgrid",
+    "shopify",
+    "slack",
+    "telegram",
+    "twenty"
+  ],
+  "outreach": [
+    "ahrefs",
+    "brex",
+    "dataforseo",
+    "intercom",
+    "pylon",
+    "se_ranking",
+    "zendesk"
+  ],
+  "headlines": [
+    "15 of 100 apps are buildable now, 14 with a caveat, 1 blocked, 70 unknown.",
+    "unknown is the most common auth method (35 apps), then oauth2 (28).",
+    "Top blocker: ship_path_unverified (5 apps).",
+    "14 apps are easy wins (self-serve, medium/broad API); 7 are gated and need outreach.",
+    "5 apps are free to test but gated to ship.",
+    "Official MCP: 20 yes, 1 community, 2 no, 77 unknown (L2 cannot prove a negative, so treat 'no' as 'not found')."
+  ]
+}

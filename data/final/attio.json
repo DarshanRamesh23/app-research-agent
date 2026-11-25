@@ -1,0 +1,89 @@
+{
+  "record": {
+    "id": "attio",
+    "one_liner": "Attio provides a CRM platform with agentic workflows, custom objects, and developer capabilities including APIs, webhooks, an app SDK, and MCP server support.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every new Attio workspace starts with a 14-day free trial of the Pro plan, with access to all Pro features.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://attio.com/pricing",
+        "quote": "Every plan includes the Attio MCP server, which connects AI tools that support the Model Context Protocol, such as Claude and ChatGPT, to your workspace.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided text shows a permanent Free plan but does not mention a 14-day free trial of the Pro plan."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The text does not provide information about integration publishing requirements or developer app review processes."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The pricing page lists an MCP server directly under Attio's official platform and developer features."
+    }
+  },
+  "l2_model": "gemini-3.6-flash",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "free_trial",
+      "after": "free_trial",
+      "l2": "unverifiable",
+      "reason": "The provided text shows a permanent Free plan but does not mention a 14-day free trial of the Pro plan.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The text does not provide information about integration publishing requirements or developer app review processes.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [
+    "api_type:quote_not_found:rest"
+  ],
+  "sources": [
+    "https://attio.com/pricing"
+  ]
+}

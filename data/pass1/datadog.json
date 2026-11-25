@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "datadog",
+    "one_liner": "Datadog provides an HTTP REST API for monitoring, metrics, logs, and security, authenticated primarily via API and application keys.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "quote": "Authenticate to the API with an API key using the header DD-API-KEY . For some endpoints, you also need an Application key , which uses the header DD-APPLICATION-KEY .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "quote": "The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests, and uses standard HTTP response codes.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "quote": "Action Connection Actions Datastores Agent Health Agent Observability Agentless Scanning AI Gateway AI Guard Annotations Anthropic Usage And Costs Integration API Management APM APM Retention Filters APM Trace App Builder Application Security Audit Authentication AuthN Mappings AWS Integration AWS Logs Integration Azure Integration Bits AI Bits Security Analyst Change Management ChatGPT Enterprise Integration CI Visibility GitHub Accounts CI Visibility Logs CI Visibility Pipelines CI Visibility Tests Claude Compliance Integration Cloud Authentication Cloud Cost Management Cloud Network Monitoring Cloudflare Integration Code Coverage Compliance Confluent Cloud Container Images Containers CoreWeave Integration CSM Agents CSM Coverage Analysis CSM Ownership CSM Settings CSM Threats Customer Org Dashboard Lists Dashboard Secure Embed Dashboard Sharing Dashboards Data Deletion Data Observability Databricks Integration Datasets DDSQL Delivery Performance DEM Deployment Gates Domain Allowlist Downtimes Elastic Cloud Integration Embeddable Graphs End User Device Monitoring Entity Integration Configs Entity Risk Scores Error Tracking Events Execution Policy Experiments Fastly Integration Feature Flags Fleet Automation Forms GCP Integration Google Chat Integration Governance Console High Availability MultiRegion Hosts Identity Providers Incidents Integrations IP Allowlist IP Ranges Jira Integration Key Management Logs Logs Archive Searches Logs Archives Logs Custom Destinations Logs Indexes Logs Metrics Logs Pipelines Logs Restriction Queries Metrics Microsoft Teams Integration Model Lab API Monitors Nebius Cloud Integration Network Device Monitoring Notebooks OAuth2 Client Public Observability Pipelines OCI Integration Okta Integration On-Call On-Call Paging OpenAI Codex Integration Opsgenie Integration Org Authorized Clients Org Connections Org Groups Organizations PagerDuty Integration Powerpack Processes Product Analytics Product Catalog Reference Tables Report Schedules Reporting And Sharing Restriction Policies Roles RUM Rum Audience Management RUM Config RUM Insights RUM Managed Archives RUM Metrics RUM Operations RUM Recovery RUM Remote Config RUM Replay Heatmaps RUM Replay Playlists RUM Replay Sessions RUM Replay Viewership RUM Retention Filters RUM Retention Quotas Rum Teams Ownership SCIM Scorecards Seats Security Monitoring Sensitive Data Scanner Service Accounts Service Checks Service Definition Service Dependencies Service Level Objective Corrections Service Level Objectives ServiceNow Integration Slack Integration Snapshots Snowflake Integration Software Catalog Spans Spans Metrics Static Analysis Status Pages Statuspage Integration Stegadography Storage Management Synthetics Tag Rules Tags Teams Temporal Cloud OpenMetrics Integration Test Optimization Threat Intelligence Timeseries Anomaly Investigations Twilio Integration Usage Metering User Authorized Clients Users Webhooks Integration Widgets Work Management Work Management Attribute Work Management Type Workflow Automation",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.datadoghq.com/api/latest/",
+    "https://docs.datadoghq.com/api/latest/authentication/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

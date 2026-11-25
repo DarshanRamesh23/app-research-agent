@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "otter_ai",
+    "one_liner": "Otter.ai offers an API and webhooks for Enterprise customers, along with an official MCP server.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "paid_plan",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Requires Enterprise plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://otter.ai/pricing",
+        "quote": "Otter API & Webhooks",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://otter.ai/pricing",
+        "quote": "Otter API & Webhooks",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://otter.ai/pricing",
+        "quote": "New Otter MCP server",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://otter.ai/developers",
+    "https://otter.ai/pricing"
+  ],
+  "model": "gemini-3.5-flash"
+}

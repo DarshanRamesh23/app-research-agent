@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "monday_com",
+    "one_liner": "Monday.com API integration team research providing GraphQL API, OAuth2 authentication, and Model/Agent APIs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "graphql",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Testing and shipping access tiers are not explicitly detailed in the documentation sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.monday.com/",
+        "quote": "OAuth2 scopes built in Request granular scopes like boards:read .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.monday.com/",
+        "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://developer.monday.com/",
+        "quote": "Connect the developer MCP to any agent. Scaffold, set env vars, and promote versions from chat.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.monday.com/",
+    "https://developer.monday.com/",
+    "https://developer.monday.com/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

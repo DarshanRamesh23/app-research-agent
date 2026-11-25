@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "pylon",
+    "one_liner": "Pylon is an omnichannel B2B customer support platform bringing Slack, Teams, email, and chat into one queue with AI-powered automations and a REST API.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Paid plan required for API access, and no self-serve free tier for testing is detailed.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Scoped API Tokens \u2713 \u2713 \u2713",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Professional $89/seat on an annual contract Book a demo Includes: Viewer seats Core support Out-of-the-box Analytics Automations Skills Broadcasts MCP API Integrations",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "REST API \u2713 \u2713 \u2713",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Pylon MCP server \u2713 \u2713 \u2713",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_type:quote_not_found:rest",
+    "official_mcp:quote_not_found:yes"
+  ],
+  "sources": [
+    "https://www.usepylon.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

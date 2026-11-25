@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "lark_larksuite",
+    "one_liner": "Lark (Larksuite) provides an open platform for developers to build apps and integrate with its APIs.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient detail in sources to determine authentication methods, access tiers, API type/breadth, or MCP status.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://open.larksuite.com/document/home/index",
+    "https://open.larksuite.com/document/getting-started/overview",
+    "https://open.larksuite.com/document/common-concepts/authentication",
+    "https://open.larksuite.com/document/api-reference"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

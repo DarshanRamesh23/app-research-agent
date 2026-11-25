@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "fanbasis",
+    "one_liner": "FanBasis, now known as Commas, is an all-in-one platform for online sales, communities, courses, webinars, and payments featuring embedded checkouts, APIs, SDKs, and an MCP integration.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient documentation regarding authentication methods, access tiers, and complete API endpoints.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://commas.com/",
+        "quote": "Enterprise & APIs Embedded checkouts, multi-rail payouts, APIs and SDKs.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://commas.com/",
+        "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://commas.com/",
+    "https://commas.com/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

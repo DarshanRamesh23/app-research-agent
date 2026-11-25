@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "pylon",
+    "one_liner": "Pylon is an omnichannel B2B customer support platform integrating Slack, Teams, email, and WhatsApp with AI capabilities, MCP, and a developer platform.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Professional $89/seat on an annual contract Book a demo Includes: Viewer seats Core support Out-of-the-box Analytics Automations Skills Broadcasts MCP API Integrations",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Developer platform Features Professional Pro Advanced Adv Enterprise Ent REST API \u2713 \u2713 \u2713",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.usepylon.com/pricing",
+        "quote": "Pylon MCP server \u2713 \u2713 \u2713",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.usepylon.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

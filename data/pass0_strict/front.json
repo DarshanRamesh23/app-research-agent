@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "front",
+    "one_liner": "Customer communication platform providing a Core API, Plugin SDK, Channels API, MCP Server, and Connectors for building custom integrations, workflows, and AI assistants.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token",
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://dev.frontapp.com/docs/authentication",
+        "quote": "The Core API uses Bearer tokens to authenticate its user. You MUST send the token for each request in the Authorization header. The token MUST be preceded by Bearer . See the Authorization header in the example request below. cURL curl --request GET \\ --url https://api2.frontapp.com/conversations/cnv_123/drafts --header 'Authorization: Bearer [REQUEST_TOKEN]' OAuth v Front API Tokens There are two ways to get a Bearer token \u2014 through API tokens in your settings or through an OAuth implementation .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "You can create a developer account by signing up here . You\u2019ll get access to a free developer environment that will provide everything you need to begin building with our APIs.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "If you are building an app you intend to publish on our App Store, you must build this app in a developer account.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "Our primary backend API that allows you to read, create, update, and delete a wide range of data across Front\u2019s various entities, from Contacts to Comments to Tags.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "Front features APIs that cover a wide variety of functionality. You'll likely only need to use one of them, but some integration use cases are suited for a combination of the offerings.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://dev.frontapp.com/docs/welcome",
+        "quote": "MCP Server Access Front data and actions through the MCP protocol, allowing AI agents like Claude and ChatGPT to read and reply to conversations and other Front resources.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://dev.frontapp.com/docs/welcome",
+    "https://dev.frontapp.com/docs/authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

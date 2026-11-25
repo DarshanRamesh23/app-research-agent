@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "help_scout",
+    "one_liner": "Help Scout provides APIs including Inbox, Chat, and Docs APIs along with Webhooks and Apps for developers to integrate and build tools.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "blocked",
+    "blocker": "Missing authentication and access credential details",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.helpscout.com/",
+        "quote": "Inbox API - read and write data to Help Scout inboxes",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.helpscout.com/",
+        "quote": "Inbox API - read and write data to Help Scout inboxes Chat API - read and answer live Beacon chats while they are still open Docs API - read and write data to your Docs sites Webhooks - get notified about activity in Help Scout",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer.helpscout.com/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

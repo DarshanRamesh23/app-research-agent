@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "amazon_selling_partner",
+    "one_liner": "Programmatic access to the Amazon catalog for searching and retrieving item information.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "blocked",
+    "blocker": "Insufficient documentation provided regarding authentication, credentials generation, and shipping access.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer-docs.amazon/sp-api/docs/catalog-items-api-v2022-04-01-reference",
+        "quote": "searchCatalogItems GET /catalog/2022-04-01/items",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer-docs.amazon/sp-api/docs/catalog-items-api-v2022-04-01-reference",
+        "quote": "Use Catalog Items to gain programmatic access to information contained in the Amazon catalog.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/page/404",
+    "https://developer-docs.amazon/sp-api/docs/catalog-items-api-v2022-04-01-reference"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

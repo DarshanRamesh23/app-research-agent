@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "sendgrid",
+    "one_liner": "SendGrid provides a v3 REST API and email services for sending transactional and marketing emails at scale.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+        "quote": "To authenticate access to Twilio SendGrid services, use Application Programming Interface (API) keys.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "quote": "Free trial No credit card required Flexible pricing",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "quote": "Flexible pricing",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+        "quote": "The SendGrid API endpoints allow you to integrate with your tech stack to send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+    "https://www.twilio.com/docs/sendgrid/api-reference",
+    "https://www.twilio.com/en-us/sendgrid"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

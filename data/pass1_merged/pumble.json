@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "pumble",
+    "one_liner": "Pumble provides an API addon using API keys for sending messages, managing channels, and executing actions via HTTP requests.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "Available on all plans By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "Available on all plans By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "The full list of available actions is available in the Swagger documentation. You can also use the documentation in Swagger, just enter your API key in the Authorize part.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "The generated key enables interaction with the Addon\u2019s public API, allowing users to send requests and execute various actions within Pumble, including: Sending messages Leaving a reply to a message Message deletion Adding a reaction to a message Channel creation Listing the messages in a channel",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

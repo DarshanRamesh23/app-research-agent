@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "mrscraper",
+    "one_liner": "MrScraper is an AI-powered web scraping platform offering scraper workflows, web search, API endpoints, SDKs, and an MCP server.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "Token Plan Learn how tokens work and create an API token for authentication.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "Scrape pages, extract brand details and JSON, search the web, and check account status with the async mrscraper-sdk package.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "MCP Server Let AI agents fetch pages and search Google through the Model Context Protocol.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.mrscraper.com/docs/getting-started/overview"
+  ],
+  "model": "gemini-3.5-flash"
+}

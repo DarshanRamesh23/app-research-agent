@@ -1,0 +1,61 @@
+{
+  "record": {
+    "id": "lark_larksuite",
+    "one_liner": "Lark open platform provides APIs and developer documentation for integration.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "insufficient source details on access_test and access_ship",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://open.larksuite.com/document/server-docs/authentiction-management/access-token/overview",
+        "quote": "tenant_access_token and user_access_token are two types of access tokens used in the Lark open platform.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://open.larksuite.com/document/getting-started/introduction",
+        "quote": "Lark Open Platform provides a rich set of OpenAPI, allowing you to easily develop enterprise collaboration applications.",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://open.larksuite.com/document/getting-started/introduction",
+        "quote": "Lark Open Platform provides a rich set of OpenAPI, allowing you to easily develop enterprise collaboration applications.",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found",
+    "api_type:quote_not_found",
+    "api_breadth:quote_not_found"
+  ],
+  "sources": [
+    "https://open.larksuite.com/document/home/index",
+    "https://open.larksuite.com/document/getting-started/introduction",
+    "https://open.larksuite.com/document/server-docs/authentiction-management/access-token/overview",
+    "https://open.larksuite.com/document/client-docs/bot-v3/overview"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

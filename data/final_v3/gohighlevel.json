@@ -1,0 +1,27 @@
+{
+  "record": {
+    "id": "gohighlevel",
+    "one_liner": "",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {},
+    "verdict_pass1": "unknown"
+  },
+  "l2": {},
+  "l2_model": null,
+  "changes": [],
+  "flags": [
+    "no_sources"
+  ],
+  "sources": [],
+  "rules": []
+}

@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "smartsheet",
+    "one_liner": "Smartsheet provides collaborative work management platforms with developer SDKs and MCP resources.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "community",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "insufficient information on authentication methods, access plans, and API breadth from the provided sources",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://github.com/smartsheet",
+        "quote": "Library that uses Python to connect to Smartsheet services (using API 2.0).",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/smartsheet",
+        "quote": "smartsheet-mcp-community Public Smartsheet MCP community resources and integration utilities",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://github.com/smartsheet"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

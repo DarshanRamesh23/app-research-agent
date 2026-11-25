@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "magento_adobe_commerce",
+    "one_liner": "Adobe Commerce (Magento) provides REST and GraphQL APIs supporting OAuth 1.0a, tokens, login credentials, and Adobe IMS for integration with CRM, ERP, CMS, and custom applications.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Test and ship access requirements are not documented in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/",
+        "quote": "Third-party applications authenticate with OAuth 1.0a . Mobile applications authenticate using tokens . Administrators and customers are authenticated with login credentials . ... In Adobe Commerce as a Cloud Service, you must use Adobe Identity Management Service (IMS) to authenticate your requests .",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/",
+        "quote": "However, access to similar functionality remains available with the GraphQL APIs .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.adobe.com/commerce/webapi/rest/",
+        "quote": "Adobe Commerce provides a wide range of REST API endpoints that allow you to perform actions on behalf of Commerce administrators, customers, and guest shoppers.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://developer.adobe.com/commerce/webapi/rest/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

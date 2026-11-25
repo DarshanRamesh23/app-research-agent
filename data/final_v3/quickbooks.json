@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "quickbooks",
+    "one_liner": "QuickBooks online accounting APIs for integration",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {},
+  "l2_model": null,
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization",
+    "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+  ],
+  "rules": []
+}

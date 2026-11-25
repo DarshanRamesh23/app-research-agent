@@ -1,0 +1,71 @@
+{
+  "record": {
+    "id": "otter_ai",
+    "one_liner": "Otter.ai offers an API and webhooks for Enterprise customers, along with an official MCP server.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "paid_plan",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://otter.ai/pricing",
+        "quote": "Otter API & Webhooks",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://otter.ai/pricing",
+        "quote": "Otter API & Webhooks",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://otter.ai/pricing",
+        "quote": "New Otter MCP server",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pricing page lists 'Otter API & Webhooks' under the Enterprise plan, which is a paid tier."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The pricing page lists 'Otter API & Webhooks' under the Enterprise plan, which is a paid tier."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The Otter.ai pricing page directly lists 'New Otter MCP server' as an included feature under the Basic plan."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://otter.ai/developers",
+    "https://otter.ai/pricing"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "record": {
+    "id": "netlify",
+    "one_liner": "Netlify provides a REST API to manage atomic deploys, form submissions, JavaScript snippets, DNS, and more, with support for OAuth2 and personal access tokens.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Netlify uses OAuth2 for authentication. All requests must use HTTPS. To authenticate API requests, include the token in the authorization header: Authorization: Bearer <YOUR_PERSONAL_ACCESS_TOKEN>",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page directly states 'Use the Netlify REST API to manage atomic deploys'."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "auth_methods:quote_not_found:['oauth2', 'bearer_token']"
+  ],
+  "sources": [
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/"
+  ],
+  "rules": []
+}

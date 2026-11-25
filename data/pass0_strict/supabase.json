@@ -1,0 +1,64 @@
+{
+  "record": {
+    "id": "supabase",
+    "one_liner": "Supabase provides an open source Firebase alternative built on top of a full Postgres database with auto-generated REST and GraphQL APIs, Auth, Storage, and Realtime functionality.",
+    "auth_methods": [
+      "api_key",
+      "jwt",
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://supabase.com/docs/guides/auth",
+        "quote": "Supabase Auth uses JSON Web Tokens (JWTs) for authentication.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://supabase.com/docs/guides/api",
+        "quote": "Supabase provides a RESTful API using PostgREST , a thin API layer on top of Postgres. It exposes everything you need from a CRUD API at the URL https://<project_ref>.supabase.co/rest/v1/ .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://supabase.com/docs/guides/api",
+        "quote": "The reflected API is designed to retain as much of Postgres' capability as possible including: Basic CRUD operations (Create/Read/Update/Delete) Arbitrarily deep relationships among tables/views, functions that return table types can also nest related tables/views.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/supabase/mcp",
+        "quote": "Connect Supabase to your AI assistants supabase.com/mcp",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "access_test:quote_not_found",
+    "access_ship:quote_not_found"
+  ],
+  "sources": [
+    "https://supabase.com/docs",
+    "https://supabase.com/docs/guides/auth",
+    "https://supabase.com/docs/guides/api",
+    "https://supabase.com/docs/guides/getting-started",
+    "https://supabase.com/docs/reference",
+    "https://github.com/supabase/mcp"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

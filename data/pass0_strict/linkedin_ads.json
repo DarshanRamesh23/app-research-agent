@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "linkedin_ads",
+    "one_liner": "LinkedIn Marketing APIs let businesses build tech to manage marketing campaigns, report performance, manage leads, and grow company pages.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient access and authentication details in sources",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+        "quote": "Authentication How-To Guide",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+        "quote": "The platform offers APIs to create LinkedIn marketing campaigns",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+        "quote": "With Advertising APIs, streamline your campaign management, audience targeting, and track performance to optimize advertising efforts.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

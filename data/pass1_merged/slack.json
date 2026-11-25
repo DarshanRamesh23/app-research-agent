@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "slack",
+    "one_liner": "Slack provides a comprehensive platform featuring a Web API with over 100 HTTP endpoints, an Events API, SCIM/Admin APIs, and an official remote MCP server.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "quote": "Slack apps are installed with a v2 OAuth 2.0 flow.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.slack.dev/",
+        "quote": "No approval yet? Try it in a free Developer Program sandbox .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "quote": "OAuth allows a user in any Slack workspace to install your app.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.slack.dev/apis/",
+        "quote": "The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.slack.dev/apis/",
+        "quote": "With over 100 methods available, it's impossible to explain everything that's possible with the Web API, but we're sure there's one right for your app.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.slack.dev/",
+        "quote": "One install adds the Slack developer skills, plus the Slack MCP server in Claude Code and Cursor.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.slack.dev/authentication/installing-with-oauth/",
+    "https://docs.slack.dev/",
+    "https://docs.slack.dev/apis/"
+  ],
+  "model": "gemini-3.6-flash"
+}

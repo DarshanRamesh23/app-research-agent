@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "harvest",
+    "one_liner": "Harvest provides a comprehensive REST API v2 allowing programmatic access to track time, log expenses, manage projects, and more, using OAuth2 or Personal Access Tokens for authentication.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+        "quote": "Harvest requires applications to authenticate all requests with OAuth2 or Personal Access Tokens .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+        "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://help.getharvest.com/api-v2/",
+        "quote": "Clients API Client Contacts Clients See all docs Company Settings Company See all docs Invoices API Invoice Messages Invoice Payments Invoices Invoice Item Categories See all docs Estimates API Estimate Messages Estimates Estimate Item Categories See all docs Expenses API Expenses Expense Categories See all docs Tasks API Tasks See all docs Timesheets API Time Entries See all docs Projects API Tags Project User Assignments Project Task Assignments Projects See all docs Roles API Permissions Custom Roles Roles See all docs Users API User Teammates User Billable Rates User Cost Rates User Project Assignments Users See all docs Reports API Saved and Generated Reports Report Exports Profitability Report Detailed Reports Expense Reports Uninvoiced Report Time Reports Project Budget Report See all docs Paid Time Off API Work Schedules Time Off Requests Time Off Policies Time Off Balances Holiday Calendars User Assignments & Allocations See all docs Approvals API Approvals See all docs Notifications API Notifications Notification Preferences See all docs Reimbursements API Reimbursements See all docs Imports API Imports See all docs Integrations API Gusto Sync Runs Gusto Settings and User Mappings See all docs Forecast API Time Off and Company Holidays Scheduled Assignments Schedule Export Repeating Assignments Project Financials Planned Expenses Placeholders Milestones Forecast Settings Forecast API Overview Board Window Board Projects Availability Heatmap See all docs",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://help.getharvest.com/api-v2/",
+    "https://help.getharvest.com/api-v2/introduction/overview/general/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

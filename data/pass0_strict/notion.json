@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "notion",
+    "one_liner": "Notion API allows building integrations, internal tools, and public apps to interact with Notion workspaces, pages, and databases.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "quote": "You can start authorization as soon as you configure the integration\u2019s client credentials and redirect URI; Marketplace submission or review is not required.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "quote": "You can start authorization as soon as you configure the integration\u2019s client credentials and redirect URI; Marketplace submission or review is not required.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "quote": "The API token will be used to authenticate REST API requests.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+        "quote": "Capabilities determine which operations a connection or token can perform, such as reading pages, updating databases, or adding comments.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.notion.com/guides/connections-and-tokens/overview",
+    "https://developers.notion.com/guides/authorization/overview",
+    "https://developers.notion.com/reference/intro"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

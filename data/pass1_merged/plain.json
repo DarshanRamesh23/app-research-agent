@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "plain",
+    "one_liner": "Plain is a support platform for B2B teams built API-first with a GraphQL API.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "graphql",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient documentation sources available to verify authentication methods and API access procedures.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://www.plain.com/docs/product/what-is-plain",
+        "quote": "Everything the app can do, the GraphQL API can do, so you can automate a workflow",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.plain.com/docs/product/what-is-plain",
+        "quote": "Everything the app can do, the GraphQL API can do, so you can automate a workflow",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.plain.com/docs/product/what-is-plain"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

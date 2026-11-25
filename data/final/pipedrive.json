@@ -1,0 +1,89 @@
+{
+  "record": {
+    "id": "pipedrive",
+    "one_liner": "Pipedrive is a global CRM with a comprehensive RESTful API supporting OAuth 2.0 and API tokens, sandbox accounts for testing, and options to build public or private apps.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "ship_path_unverified",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://pipedrive.readme.io/docs/getting-started",
+        "quote": "You can use our API to create public or private apps using OAuth 2.0 and integrations via API token .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://pipedrive.readme.io/docs/getting-started",
+        "quote": "Create a developer sandbox account Testing in a risk-free environment. Learn more about it here or sign up for one now .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://pipedrive.readme.io/docs/getting-started",
+        "quote": "Pipedrive is a global CRM with headquarters in the USA and operations in the USA and EU, featuring an intuitive RESTful API .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "Pipedrive's API and extension points cover the majority of our core product's functionality.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that apps can use OAuth 2.0 and integrations via API token."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pages explicitly mention the ability to create a developer sandbox account for testing in a risk-free environment."
+    },
+    "access_ship": {
+      "verdict": "contradicted",
+      "reason": "The pages mention that public apps work directly with Pipedrive and are available in the Marketplace, but do not state that publishing is free and self-serve."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly describes the API as an intuitive RESTful API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation states that the API and extension points cover the majority of the core product's functionality."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "unknown",
+      "l2": "contradicted",
+      "reason": "The pages mention that public apps work directly with Pipedrive and are available in the Marketplace, but do not state that publishing is free and self-serve.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://pipedrive.readme.io/docs/getting-started",
+    "https://developers.pipedrive.com/docs/api/v1"
+  ]
+}

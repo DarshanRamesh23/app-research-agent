@@ -1,0 +1,102 @@
+{
+  "record": {
+    "id": "stripe",
+    "one_liner": "A comprehensive online payments and financial infrastructure platform providing REST APIs, SDKs, and developer tools for processing payments, billing, and managing financial operations.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.stripe.com/api/authentication",
+        "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard... The Stripe API authenticates requests using HTTP Basic Auth . Provide your API key as the basic auth username value. You don\u2019t need to provide a password. If you need to authenticate using bearer auth (for example, for a cross-origin request), use -H \"Authorization: Bearer sk_test_... sk_test_... \" instead of -u sk_test_... sk_test_... .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.stripe.com/api",
+        "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://stripe.com/in/pricing",
+        "quote": "Standard Access a complete payments platform with simple, pay-as-you-go pricing. No setup fees, monthly fees, or hidden fees.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.stripe.com/api",
+        "quote": "The Stripe API is organized around REST . Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.stripe.com/api/authentication",
+        "quote": "Core Resources Accounts v2 Account Links v2 Account Tokens v2 US Bank Accounts v2 GB Bank Accounts v2 Balances Balance Transactions Charges Customers Customer Sessions Disputes Events Events v2 Event Destinations v2 Files File Links Mandates Payment Intents Persons v2 Person Tokens v2 Setup Intents Setup Attempts 3DS Authentications Payouts Refunds Confirmation Tokens Tokens Ephemeral Keys Payment Methods Payment Methods Payment Method Configurations Payment Method Domains Bank Accounts Cash Balances Cash Balance Transactions Cards Sources Money Management Products Products Prices Coupons Promotion Codes Discounts Tax Codes Tax Rates Shipping Rates Product Catalog Trial Offers Commerce Agentic Commerce Shared Payment Issued Tokens Shared Payment Granted Tokens Checkout Checkout Sessions Payment Links Payment Links Billing Alerts Credit Balance Summaries Credit Balance Transactions Credit Grants Credit Notes Customer Balance Transactions Customer Portal Configurations Customer Portal Sessions Feedback Options Invoices Invoice Items Invoice Line Items Invoice Payments Invoice Rendering Templates Billing Meters Billing Meter Events Billing Meter Event Adjustments Meter Event Adjustments v2 Meter Event Streams v2 Billing Meter Event Summaries Billing Meter Events v2 Plans Quotes Subscriptions Subscription Items Subscription Schedules Tax IDs Test Clocks Capital Financing Offers Financing Summaries Connect Accounts Login Links Account Links Account Sessions Application Fees Application Fee Refunds Capabilities Country Specs Balance Settings External Bank Accounts External Account Cards Persons Top-ups Transfers Transfer Reversals Secrets App Installs Reserves Fraud Issuing Terminal Treasury for Platforms Payment Records Account Evaluation Entitlements Sigma Reporting Financial Connections Tax Identity Crypto Climate Tax Reporting Forwarding Privacy Webhooks Sandboxes Claimable Sandboxes v2",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://docs.stripe.com/development",
+        "quote": "MCP Enable agents to use tools and securely take actions in your Stripe account.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly confirms API keys, HTTP Basic Auth, and bearer token authentication."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not specify whether testing access is free and self-serve."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages mention standard pay-as-you-go pricing and 'Request an invite', but do not confirm whether publishing an integration is completely free self-serve."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation states that the Stripe API is organized around REST."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation lists Model Context Protocol (MCP) as a vendor tool to enable agents to use tools and take actions in a Stripe account."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not specify whether testing access is free and self-serve.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages mention standard pay-as-you-go pricing and 'Request an invite', but do not confirm whether publishing an integration is completely free self-serve.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [
+    "api_breadth:quote_not_found:broad"
+  ],
+  "sources": [
+    "https://docs.stripe.com/development",
+    "https://docs.stripe.com/api/authentication",
+    "https://docs.stripe.com/api",
+    "https://stripe.com/in/pricing"
+  ]
+}

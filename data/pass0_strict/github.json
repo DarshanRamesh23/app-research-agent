@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "github",
+    "one_liner": "GitHub offers a fully described OpenAPI-compliant REST API supporting personal access tokens for authentication.",
+    "auth_methods": [
+      "bearer_token",
+      "other"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "quote": "You can use a personal access token in place of a password when authenticating to GitHub in the command line or with the API.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "quote": "In the left sidebar, under Personal access tokens , click Fine-grained tokens . Click Generate new token .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "quote": "In the left sidebar, under Personal access tokens , click Fine-grained tokens . Click Generate new token .",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.github.com/en/rest",
+        "quote": "The GitHub REST API is fully described in an OpenAPI compliant document.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.github.com/en/rest",
+        "quote": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

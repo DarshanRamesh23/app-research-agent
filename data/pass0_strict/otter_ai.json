@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "otter_ai",
+    "one_liner": "Otter.ai offers AI meeting transcription, notes, chat, and workflows with an enterprise-level API and Webhooks integration option.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "blocked",
+    "blocker": "API access requires custom enterprise pricing and scheduling a demo.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://otter.ai/pricing",
+        "quote": "Enterprise For large teams and companies Custom pricing Schedule a demo Unlimited custom AI workflows Otter Sales Notetaker Custom integrations (CRM, dialers) Everything in Business, plus SSO, SCIM, Domain Capture Enterprise-grade security & controls HIPAA compliance (add-on) Otter API & Webhooks",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://otter.ai/pricing",
+        "quote": "300 monthly transcription minutes New Otter MCP server",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://otter.ai/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

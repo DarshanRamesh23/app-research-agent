@@ -1,0 +1,88 @@
+{
+  "record": {
+    "id": "whatsapp_business",
+    "one_liner": "WhatsApp Business Cloud API allowing developers to send messages, manage WhatsApp Business accounts, and configure webhooks.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "quote": "-H 'Authorization: Bearer <SYSTEM_USER_ACCESS_TOKEN>'",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "quote": "This guide helps developers quickly get started with the WhatsApp Cloud API. It covers the basic setup steps, including registering as a developer, creating a Meta app, sending your first message, and setting up a test webhook endpoint.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "quote": "Open the Meta App Dashboard to create a new Meta app with the WhatsApp use case.",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "quote": "curl 'https://graph.facebook.com/v23.0/<TEST_BUSINESS_PHONE_NUMBER_ID>/messages' \\\n-H 'Content-Type: application/json' \\\n-H 'Authorization: Bearer <SYSTEM_USER_ACCESS_TOKEN>' \\",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation details steps for developers to register, create a Meta app, generate a temporary access token, and set up a test webhook endpoint."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided page excerpt does not contain information about message breadth, group creation, or calling support."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The claim value is 'no' and the provided documentation page contains no mention of an official Model Context Protocol (MCP) server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "api_breadth",
+      "before": "broad",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided page excerpt does not contain information about message breadth, group creation, or calling support.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [
+    "auth_methods:quote_not_found:['bearer_token']",
+    "access_ship:quote_not_found:free_self_serve",
+    "api_type:quote_not_found:rest",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+  ],
+  "rules": [
+    "R2:official_mcp"
+  ]
+}

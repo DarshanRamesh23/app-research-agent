@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "ecwid",
+    "one_liner": "Ecwid offers an ecommerce API and platform allowing developers to build custom apps, integrate payment/shipping, customize storefronts, and automate integrations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Insufficient authentication and access details in sources",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Markdown versions of documentation pages are available by appending .md to page URLs.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Payment API Connect any payment provider with your Ecwid store Shipping API Calculate online shipping rates at the checkout",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Agents can also search and read this documentation through its MCP server",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://docs.ecwid.com",
+    "https://docs.ecwid.com"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

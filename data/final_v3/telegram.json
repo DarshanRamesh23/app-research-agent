@@ -1,0 +1,90 @@
+{
+  "record": {
+    "id": "telegram",
+    "one_liner": "Telegram provides APIs (including MTProto and Bot API) to build custom messaging apps, bots, and integration tools.",
+    "auth_methods": [
+      "other"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://core.telegram.org/api/auth",
+        "quote": "Authorization is associated with a client's encryption key identifier: auth_key_id .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://core.telegram.org/api",
+        "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://core.telegram.org/api",
+        "quote": "TDLib supports all Telegram features and makes developing Telegram apps a breeze on any platform.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The pages show alternative login flows including QR code, passkey, and sending verification codes, fitting 'other'."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "Developers can use the API and source code free of charge by obtaining an api_id."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "Developers can create and publish applications free of charge after obtaining their own API id."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The Bot API communicates via a simple HTTPS interface offering a simplified version of the Telegram API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "TDLib supports all Telegram features and makes developing Telegram apps on any platform a breeze."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "There is no mention of an official Model Context Protocol (MCP) server provided by the vendor."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://core.telegram.org/api/obtaining_api_id",
+    "https://core.telegram.org/api/auth",
+    "https://core.telegram.org/api",
+    "https://core.telegram.org/access"
+  ],
+  "rules": [
+    "R2:official_mcp"
+  ]
+}

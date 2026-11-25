@@ -1,0 +1,62 @@
+{
+  "record": {
+    "id": "neo4j",
+    "one_liner": "Neo4j is a graph database platform offering cloud-managed graph services, APIs, and client drivers with OAuth 2.0 and Basic authentication.",
+    "auth_methods": [
+      "oauth2",
+      "basic",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://neo4j.com/docs/aura/api/authentication/",
+        "quote": "The Aura API uses OAuth 2.0 for API authentication... Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "Query API Included GraphQL Library Included",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "Query API Included GraphQL Library Included Neo4j Bloom/Visualization Library Included",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/neo4j",
+        "quote": "mcp Public Neo4j official MCP Server Go",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:quote_not_found:yes"
+  ],
+  "sources": [
+    "https://neo4j.com/docs/aura/api/authentication/",
+    "https://neo4j.com/docs/",
+    "https://neo4j.com/docs/getting-started/",
+    "https://neo4j.com/pricing/",
+    "https://github.com/neo4j"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,102 @@
+{
+  "record": {
+    "id": "ecwid",
+    "one_liner": "Ecwid e-commerce platform API allowing developers to customize storefronts, automate integrations, handle shipping, payments, and manage store data via REST API and OAuth 2.0.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "quote": "Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "quote": "All requests to Ecwid REST API require an access token .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Payment API Connect any payment provider with your Ecwid store Shipping API Calculate online shipping rates at the checkout",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ecwid.com",
+        "quote": "Agents can also search and read this documentation through its MCP server .",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation states that Ecwid uses OAuth 2.0 and authenticates REST API requests using a Bearer Token."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "While the documentation mentions setting up a separate test store after signing up, it does not explicitly specify if test store creation is free."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The documentation mentions steps to go live and submit public apps, but does not specify if publishing an integration is free self-serve."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly refers to the Ecwid REST API."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": " The documentation details wide coverage including products, orders, webhooks, Payment API, Shipping API, JS API, and store customization."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The official Ecwid documentation explicitly states that agents can search and read its documentation through its MCP server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "free_self_serve",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "While the documentation mentions setting up a separate test store after signing up, it does not explicitly specify if test store creation is free.",
+      "action": "to_unknown"
+    },
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The documentation mentions steps to go live and submit public apps, but does not specify if publishing an integration is free self-serve.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.ecwid.com",
+    "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "https://docs.ecwid.com/"
+  ]
+}

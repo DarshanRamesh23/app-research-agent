@@ -1,0 +1,95 @@
+{
+  "record": {
+    "id": "pumble",
+    "one_liner": "Pumble provides an API addon using API keys for sending messages, managing channels, and executing actions via HTTP requests.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "Available on all plans By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "Available on all plans By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes. This addon lets you generate an API key",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "The full list of available actions is available in the Swagger documentation. You can also use the documentation in Swagger, just enter your API key in the Authorize part.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "quote": "Sending messages Leaving a reply to a message Message deletion Adding a reaction to a message Channel creation Listing the messages in a channel",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page states that the addon lets users generate an API key to authenticate requests."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page states that the API addon is available on all plans for workspace owners, admins, and members to generate keys freely."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The page describes generating workspace API keys but does not provide details on publishing integrations or shipping them to external customers."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page specifies simple HTTP requests documented via Swagger, directly confirming a REST API."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The page lists several actions while noting that the full list of available actions is in the Swagger documentation, which does not settle whether the overall API is narrow."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The page describes generating workspace API keys but does not provide details on publishing integrations or shipping them to external customers.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_breadth",
+      "before": "narrow",
+      "after": "medium",
+      "l2": "unverifiable",
+      "reason": "The page lists several actions while noting that the full list of available actions is in the Swagger documentation, which does not settle whether the overall API is narrow.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+  ]
+}

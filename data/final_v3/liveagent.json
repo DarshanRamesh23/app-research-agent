@@ -1,0 +1,87 @@
+{
+  "record": {
+    "id": "liveagent",
+    "one_liner": "Help desk software with live chat, email, AI agents, and a call center.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "30-day free trial no credit card",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "Starter Per agent \u00b7 up to 15 agents Email and live chat for a small team Black Friday 40% off Offer price $9 $12 .73",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.liveagent.com/pricing/",
+        "quote": "Business and Enterprise: connect LiveAgent\u2019s MCP server to external AI tools such as Claude.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided page does not mention API keys or supported authentication methods."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page explicitly advertises a 30-day free trial with no credit card required to test the software."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The page details paid subscription plans such as Starter, Team, Business, and Enterprise for real customer deployment."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page explicitly lists an AI MCP server provided by LiveAgent under the Business and Enterprise plans."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "api_key"
+      ],
+      "after": [
+        "unknown"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided page does not mention API keys or supported authentication methods.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://www.liveagent.com/pricing/"
+  ]
+}

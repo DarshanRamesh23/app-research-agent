@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "twilio",
+    "one_liner": "Twilio offers REST APIs for communications services like messaging and calling, authenticated via API keys or account credentials.",
+    "auth_methods": [
+      "api_key",
+      "basic"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Access test and ship tiers are not mentioned in sources",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.twilio.com/docs/iam/api-keys",
+        "quote": "Equivalent to using your Account SID and Auth Token for API requests.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://www.twilio.com/docs/iam/api-keys",
+        "quote": "API keys are the preferred way to authenticate with Twilio's REST APIs .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.twilio.com/docs/usage/api",
+        "quote": "In Twilio's ecosystem, each product corresponds to an API. For example, Twilio Messaging corresponds to the Messaging API.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.twilio.com/docs/iam/api-keys",
+    "https://www.twilio.com/docs/usage/api"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

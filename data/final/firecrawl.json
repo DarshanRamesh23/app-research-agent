@@ -1,0 +1,85 @@
+{
+  "record": {
+    "id": "firecrawl",
+    "one_liner": "Firecrawl is an API and toolset for web searching, scraping, crawling, and interacting with live web content to return clean markdown, structured data, or AI agent context.",
+    "auth_methods": [
+      "bearer_token",
+      "none"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "No account or API key is required for this request. cURL # No API key needed to get started \u2014 add -H \"Authorization: Bearer $FIRECRAWL_API_KEY\" for higher rate limits",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "Create a free account for direct API access and higher limits",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://github.com/firecrawl/firecrawl",
+        "quote": "Firecrawl Keyless gives you 1,000 free credits a month with no API key or signup across MCP, the CLI and the API.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "curl -s -X POST \"https://api.firecrawl.dev/v2/scrape\" \\ -H \"Content-Type: application/json\" \\ -d '{ \"url\": \"https://firecrawl.dev\", \"formats\": [\"markdown\", \"html\"] }'",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "Search Search the web and get full page content from results Scrape Extract content from any URL as markdown, HTML, or structured JSON Interact Continue working with any scraped page: click, fill forms, extract dynamic content",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "quote": "MCP Server : Connect Firecrawl to any AI tool via the Model Context Protocol .",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation states that no account or API key is required, and optionally a Bearer token can be added via the Authorization header."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation explains that developers can create a free account for direct API access."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The text states that Firecrawl Keyless gives 1,000 free credits a month across MCP, CLI, and the API with no signup required."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The examples show standard REST API endpoints (e.g., POST requests to api.firecrawl.dev) using cURL and JSON payloads."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The pages describe capabilities including searching the web, scraping content, and interacting with pages (clicking, filling forms)."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation lists an official MCP Server feature to connect Firecrawl to AI tools via the Model Context Protocol."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://docs.firecrawl.dev/introduction",
+    "https://docs.firecrawl.dev/api-reference/endpoint/scrape",
+    "https://github.com/firecrawl/firecrawl"
+  ]
+}

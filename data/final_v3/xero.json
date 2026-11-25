@@ -1,0 +1,69 @@
+{
+  "record": {
+    "id": "xero",
+    "one_liner": "Xero provides an Accounting API that uses OAuth 2.0 for integration.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+        "quote": "OAuth 2.0 \u2014 Xero Developer",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.xero.com/documentation/api/accounting/overview",
+        "quote": "Accounting API Overview",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page states that the app uses OAuth 2.0."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page is titled 'Accounting API Overview', supporting the REST API type."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://developer.xero.com/documentation/getting-started/",
+    "https://developer.xero.com/documentation/guides/oauth2/overview",
+    "https://developer.xero.com/documentation/api/accounting/overview"
+  ],
+  "rules": []
+}

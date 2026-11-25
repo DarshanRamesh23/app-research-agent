@@ -1,0 +1,88 @@
+{
+  "record": {
+    "id": "cloudflare",
+    "one_liner": "Cloudflare API integration for managing accounts, zones, tokens, billing, and DNS resources via REST and SDKs.",
+    "auth_methods": [
+      "api_key",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "quote": "curl \"https://api.cloudflare.com/client/v4/user/tokens/verify\" \\\n --header \"Authorization: Bearer <API_TOKEN>\"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "quote": "From the Cloudflare dashboard \u2197\ufe0e , go to My Profile > API Tokens for user tokens.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "quote": "With this you have successfully created an API token and can start working with the Cloudflare API.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.cloudflare.com/api/",
+        "quote": "Account Details GET /accounts/{account_id} Create an Account POST /accounts",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.cloudflare.com/api/",
+        "quote": "API Overview Accounts List Accounts GET /accounts Account Details GET /accounts/{account_id} Create an Account POST /accounts",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The pages show using an Authorization Bearer token header in API requests."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "Developers can obtain user tokens and test them using the Cloudflare dashboard and API endpoints."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "Users can successfully create API tokens and start working with the Cloudflare API."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly references standard HTTP methods like GET, POST, PUT, and DELETE for REST endpoints."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The API reference lists a broad range of endpoints covering accounts, tokens, subscriptions, and logs."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "There is no mention of an official Model Context Protocol server published by Cloudflare in the provided pages."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.cloudflare.com/api/",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+    "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "https://developers.cloudflare.com/fundamentals/api/reference/permissions/"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "ahrefs",
+    "one_liner": "Ahrefs offers developer tools, APIs, and MCP integration to access marketing, SEO, and search data.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "API keys Create and manage your API keys ... OAuth guide Implement OAuth 2.0 authorization",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Free test queries Try API endpoints without an Enterprise plan",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Free test queries Try API endpoints without an Enterprise plan",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "REST API Research keywords, analyze backlinks, track rankings",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ahrefs.com",
+        "quote": "MCP Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.ahrefs.com",
+    "https://docs.ahrefs.com"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

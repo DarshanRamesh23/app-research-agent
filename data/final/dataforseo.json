@@ -1,0 +1,83 @@
+{
+  "record": {
+    "id": "dataforseo",
+    "one_liner": "DataForSEO API v3 is a REST-based SEO data API providing programmatic access to SEO software, data analysis pipelines, and no-code automations.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "Free Unlimited Trial Info",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "With DataForSEO you can get all the data you need while saving your time and budget.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly mentions \"Free Unlimited Trial Info\" as part of getting started."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions saving budget, but it does not specify whether a paid plan is required to publish or use an integration."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that DataForSEO API uses REST technology."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation describes building powerful SEO software, data analysis pipelines, and getting all the data you need."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "paid_plan",
+      "after": "paid_plan",
+      "l2": "unverifiable",
+      "reason": "The provided text mentions saving budget, but it does not specify whether a paid plan is required to publish or use an integration.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.dataforseo.com/v3/"
+  ]
+}

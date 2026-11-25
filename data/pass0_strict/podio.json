@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "podio",
+    "one_liner": "The Podio API is a complete programmable interface providing OAuth2-authenticated access to all Podio functionality, including applications, items, and webhooks.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.podio.com/authentication",
+        "quote": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.podio.com/",
+        "quote": "1 Get an API Key Get started right away - generate your API key .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.podio.com/",
+        "quote": "3 Go live! Share your project - get featured in our showcase .",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.podio.com/",
+        "quote": "The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP , .NET , Ruby , Java , Python , Android and Objective-C",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.podio.com/",
+        "quote": "The Podio API is a complete programmable interface to all Podio functionality. In fact, the entire Podio frontend is built on the API, and we've exposed it all for you to use too.",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_breadth:quote_not_found",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.podio.com/",
+    "https://developers.podio.com/authentication",
+    "https://developers.podio.com/doc"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

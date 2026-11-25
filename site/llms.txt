@@ -1,0 +1,10 @@
+# App research table (100 apps)
+Machine-readable data: data.json (fields: auth, test, ship, api, breadth, mcp, verdict, blocker, ev = evidence URLs).
+Verdict values: buildable_now, buildable_with_caveat, blocked, unknown, no_data (agent returned nothing).
+Repo: https://github.com/DarshanRamesh23/app-research-agent
+
+22 of 100 apps are buildable today; 17 more with a caveat; 1 blocked; 53 unknown; 7 not resolved by the agent.
+Most common auth: oauth2 (37), unknown (31), api_key (26).
+Most common blockers: paid_plan (6), ship_path_unverified (5), app_review (2).
+8 apps are free to test but gated to ship publicly (two-layer gate): Zendesk, Intercom, LiveAgent, Vonage, DataForSEO, SE Ranking.
+Official MCP found for 26 apps (community 1). 'No' means 'not found', not proven absent.

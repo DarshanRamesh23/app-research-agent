@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "google_ads",
+    "one_liner": "An API to access and manage Google Ads accounts, campaigns, reporting, and mutations using OAuth 2.0.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "sdk_only",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Requires a developer token and OAuth 2.0 configuration, but exact tier-based access requirements (test vs ship) are not fully detailed in the sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "quote": "Google Ads API utilizes the OAuth 2.0 protocol for authentication and authorization, allowing your app to access user accounts without handling login information.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.google.com/google-ads/api/reference/rpc/v26/overview",
+        "quote": "Google Ads API Reference Google Ads API v26 - Reference Stay organized with collections Save and categorize content based on your preferences. Most common services and resources Jump directly to the most frequently used services, resources, and reporting types",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.google.com/google-ads/api/reference/rpc/v26/overview",
+        "quote": "Campaign ( CampaignService ), AdGroup ( AdGroupService ), AdGroupAd ( AdGroupAdService ), Ad Accounts, Assets & PMax Customer ( CustomerService ), Asset , AssetGroup , CampaignBudget , BiddingStrategy",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developers.google.com/google-ads/api/reference/rpc/v26/overview",
+        "quote": "Model Context Protocol (MCP) Google Ads MCP server : Connect MCP-compatible AI clients and agents to Google Ads reporting",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.google.com/google-ads/api/docs/oauth/overview",
+    "https://developers.google.com/google-ads/api/reference/rpc/v26/overview"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

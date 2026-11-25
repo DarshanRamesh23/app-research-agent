@@ -1,0 +1,60 @@
+{
+  "record": {
+    "id": "jira",
+    "one_liner": "Jira Cloud provides a comprehensive REST API to plan, track, and manage work items, supporting OAuth 2.0 (3LO), basic authentication, and app frameworks like Forge and Connect.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "For Connect apps, authentication (JWT-based) is built into the Connect libraries. ... use OAuth 2.0 authorization code grants (3LO) for security ... use basic authentication.",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+        "quote": "OAuth 2.0 (3LO) apps are created and managed in the developer console. From any page on developer.atlassian.com, select your profile icon in the top-right corner, and from the dropdown, select Developer console.",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/",
+        "quote": "Build the future of agile work management with Jira Cloud Jira Cloud is built for every member of your software team to plan, track, and manage their work.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "quote": "Dashboards Dynamic modules Field schemes Filter sharing Filters Group and user picker Groups Issue attachments Issue bulk operations Issue comment properties Issue comments Issue custom field associations",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found",
+    "access_test:quote_not_found"
+  ],
+  "sources": [
+    "https://developer.atlassian.com/cloud/jira/platform/",
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+    "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

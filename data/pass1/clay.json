@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "clay",
+    "one_liner": "Clay is a go-to-market data orchestration and AI workflow platform that enables users to enrich leads, automate triggers, and connect via webhooks and HTTP APIs.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Bring your own API key Included Included Included Included",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Free Start building in Clay for free. No strings attached.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Free Start building in Clay for free. No strings attached.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Integrate with any HTTP API",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "HTTP API integrations See examples of HTTP API integrations",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Clay MCP for Reps Search, enrich, and reach out to leads from your Al chat tool",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://university.clay.com/docs",
+    "https://www.clay.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

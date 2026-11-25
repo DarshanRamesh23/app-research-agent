@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "gladly",
+    "one_liner": "Gladly offers REST APIs, webhooks, an App Platform for integrations, and chat SDKs.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.gladly.com/",
+        "quote": "use Gladly\u2019s REST APIs, receive notifications with webhooks, build an App Platform integration, or export data?",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.gladly.com/"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

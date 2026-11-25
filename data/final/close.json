@@ -1,0 +1,94 @@
+{
+  "record": {
+    "id": "close",
+    "one_liner": "Close is a CRM platform that offers a REST API, webhooks, and an official MCP server to build sales automation and data integrations.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.close.com/",
+        "quote": "Authentication API keys for scripts or OAuth 2.0 for user-facing integrations.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.close.com/",
+        "quote": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.close.com/",
+        "quote": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API .",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developer.close.com/",
+        "quote": "MCP Server Model Context Protocol for AI agents.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "contradicted",
+      "reason": "The page lists API keys and OAuth 2.0, but does not mention basic authentication."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The text explicitly states 'REST API Reference'."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The text explicitly mentions pushing leads, contacts, activities, and custom data via the REST API."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page lists 'MCP Server Model Context Protocol for AI agents' under the official Close developer platform."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "after": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "l2": "contradicted",
+      "reason": "The page lists API keys and OAuth 2.0, but does not mention basic authentication.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developer.close.com/",
+    "https://developer.close.com/api/overview/api-key-authentication"
+  ]
+}

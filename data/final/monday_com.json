@@ -1,0 +1,72 @@
+{
+  "record": {
+    "id": "monday_com",
+    "one_liner": "Monday.com API and developer platform allowing custom apps, integrations, and AI agent connections via a GraphQL API and OAuth2 authentication.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "graphql",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.monday.com/",
+        "quote": "OAuth2 scopes built in Request granular scopes like boards:read .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.monday.com/",
+        "quote": "An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://developer.monday.com/",
+        "quote": "Use our native integration, or manually connect with our hosted MCP url.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page directly states 'OAuth2 scopes built in Request granular scopes like boards:read'."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page states 'An expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!'."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page mentions 'Use our native integration, or manually connect with our hosted MCP url' under MCP & API."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://developer.monday.com/",
+    "https://developer.monday.com/",
+    "https://developer.monday.com/"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "woocommerce",
+    "one_liner": "WooCommerce provides a comprehensive REST API connected to WordPress, allowing external systems to manage store data such as products, orders, and customers using Consumer Keys and Secrets.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "After generating the key, the screen displays your Consumer Key , Consumer Secret , a QR Code , and a Revoke Key link. Copy the Consumer Key and Consumer Secret and enter them in the application you are connecting to.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "This documentation is about the free, core WooCommerce plugin , for which support is provided in our community forums on WordPress.org .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "This documentation is about the free, core WooCommerce plugin , for which support is provided in our community forums on WordPress.org .",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "The WooCommerce REST API connects your store to external systems and services. Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+        "quote": "Coupons Customers Orders Order notes Order refunds Products Product variations Product attributes Product attribute terms Product categories Product custom fields Product shipping classes Product tags Product reviews Reports Tax rates Tax classes Webhooks Settings Payment gateways Shipping zones Shipping status System status Data",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_breadth:quote_not_found"
+  ],
+  "sources": [
+    "https://woocommerce.com/document/woocommerce-rest-api/",
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

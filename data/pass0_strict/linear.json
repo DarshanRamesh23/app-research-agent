@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "linear",
+    "one_liner": "Linear offers a GraphQL API and TypeScript SDK for building apps and integrations using OAuth 2.0 or personal API keys.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "graphql",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://linear.app/developers",
+        "quote": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://linear.app/developers",
+        "quote": "Learn about building apps and integrations for Linear using the GraphQL API and TypeScript SDK.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://linear.app/developers",
+    "https://linear.app/developers",
+    "https://linear.app/developers"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

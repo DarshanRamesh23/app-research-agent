@@ -1,0 +1,97 @@
+{
+  "record": {
+    "id": "hubspot",
+    "one_liner": "HubSpot provides date-versioned REST APIs and bearer token/OAuth authentication for CRM and business operations data integration.",
+    "auth_methods": [
+      "bearer_token",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "When making a call to one of the HubSpot API endpoints, set the value of the Authorization field to Bearer [YOUR_TOKEN] ... Private app access tokens are implemented on top of OAuth",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "Private Apps (Any Hub)Free and Starter 100 / private app 250,000 / account",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "Private Apps (Any Hub)Free and Starter 100 / private app 250,000 / account",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "quote": "For example, to retrieve all contacts: GET /crm/objects/2026-09/contacts All APIs, whether legacy, new, or beta, use the same root path as before: https://api.hubapi.com/ .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+        "quote": "Private apps allow you to use HubSpot\u2019s APIs to access specific data from your HubSpot account. You can authorize what each private app can request or change in your account",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "Page 1 explicitly states that requests use a Bearer token in the Authorization header and that private app tokens are implemented on top of OAuth."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages mention navigating to Development in a standard HubSpot account but do not state whether testing access or accounts are free."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages explain how private apps access HubSpot account data, but do not state whether production usage or shipping integrations is free."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "Page 2 demonstrates REST HTTP endpoints using standard HTTP methods such as GET /crm/objects/2026-09/contacts."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The pages show APIs spanning multiple core platform areas, including CRM objects (contacts, companies), HubDB, webhooks, and CMS."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages mention navigating to Development in a standard HubSpot account but do not state whether testing access or accounts are free.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages explain how private apps access HubSpot account data, but do not state whether production usage or shipping integrations is free.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+    "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  ]
+}

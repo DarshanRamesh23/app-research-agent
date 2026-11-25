@@ -1,0 +1,91 @@
+{
+  "record": {
+    "id": "asana",
+    "one_liner": "Asana offers a comprehensive REST API and app components framework supporting OAuth 2.0, personal access tokens, and service accounts for project management integrations.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "ship_path_unverified",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.asana.com/docs/authentication",
+        "quote": "Personal access token (PAT) ... OAuth is an open-standard authentication protocol ... OpenID Connect (OIDC) is an open authentication protocol that works on top of the OAuth 2.0.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.asana.com/docs/building-app-components",
+        "quote": "We recommend building test apps in a developer sandbox",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "quote": "The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "quote": "contains a comprehensive reference for objects, schemas, and endpoints available in the API",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation mentions personal access tokens and OAuth as authentication options."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pages recommend building test apps in a developer sandbox."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided text mentions publishing apps to Asana's app directory, but does not state whether it is free or self-serve."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly states that the Asana API is a RESTful interface."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The reference contains a comprehensive reference for objects, schemas, and endpoints available in the API."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided text mentions publishing apps to Asana's app directory, but does not state whether it is free or self-serve.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developers.asana.com/docs/building-app-components",
+    "https://developers.asana.com/docs/authentication",
+    "https://developers.asana.com/reference/rest-api-reference"
+  ],
+  "rules": []
+}

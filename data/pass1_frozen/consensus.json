@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "consensus",
+    "one_liner": "An API providing programmatic access to peer-reviewed research papers, search, metadata, and automated research threads through the Consensus engine.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "paid_plan",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "Create API key Read the docs How Phylo powers drug discovery with Consensus \u2192 Peer-reviewed research, one API call away.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "What's in the API. The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "What's in the API. The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "GET /v1/search sent 200 Response",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://consensus.app/home/api/",
+        "quote": "GET /v1/search Search Ranked papers for your own pipeline... POST /v1/threads Threads A cited answer from the research agent.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://consensus.app/home/api/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

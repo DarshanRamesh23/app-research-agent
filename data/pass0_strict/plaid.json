@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "plaid",
+    "one_liner": "Plaid is an API platform that enables applications to securely connect users' financial accounts for data access, payments, and identity verification.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "community",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "Almost all Plaid API endpoints require a client_id and secret . These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://plaid.com/docs/quickstart/",
+        "quote": "You'll need API keys, which you can receive by signing up in the Dashboard . You'll have two different API keys, and there are two different Plaid environments. Today we'll start in the Sandbox environment.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://plaid.com/docs/quickstart/",
+        "quote": "Production Test or launch your app with unlimited live credentials",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://plaid.com/docs/",
+        "quote": "Here you'll find guides, resources, and references to build with Plaid. Quickstart Learn about Plaid's key concepts and run starter code Get started Quickstart Learn about Plaid's key concepts and run starter code Get started API Reference Explore server-side API libraries and integrate with API endpoints View reference API Reference Explore server-side API libraries and integrate with API endpoints View reference Link Link, Plaid's client-side component, helps your users connect their accounts Build with Link Link Link, Plaid's client-side component, helps your users connect their accounts Build with Link Payments and Funding Auth Retrieve bank account information for ACH, wire, and other bank-to-bank transfers.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://plaid.com/docs/",
+        "quote": "Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://plaid.com/docs/",
+    "https://plaid.com/docs/api/",
+    "https://plaid.com/docs/auth/",
+    "https://plaid.com/docs/quickstart/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

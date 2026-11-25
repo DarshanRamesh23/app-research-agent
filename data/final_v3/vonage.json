@@ -1,0 +1,92 @@
+{
+  "record": {
+    "id": "vonage",
+    "one_liner": "Vonage provides a comprehensive suite of communication APIs spanning messaging, voice, video, and network features, enabling developers to integrate multiple channels like SMS, WhatsApp, and voice calls into their applications.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "paid_plan",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "quote": "Vonage APIs support different authentication methods depending on which product you are using: API Key and Secret (Header) JSON Web Token (JWT)",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "To work with our APIs, you will need to sign up for an account . This will give you an API key and secret that you can use to access our APIs.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "Our specifications conform to OpenAPI specification version 3, also known as OAS3.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.vonage.com/en/api",
+        "quote": "Messaging Messages API For SMS, MMS, Facebook, WhatsApp, Viber, Email and much more... Voice Voice API Make and receive telephone calls to or from anywhere in the world.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "quote": "The provided pages make no mention of the Model Context Protocol (MCP) or an MCP server.",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page states that developers can sign up for an account to get an API key, secret, and free credit to access the APIs."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The page states that API access is charged on a per-request basis and users can top up their balance when it runs low."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation specifies that the APIs conform to OpenAPI specification version 3 (OAS3), which defines REST APIs."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The reference lists multiple distinct API suites across messaging, voice, account management, numbers, and verification."
+    },
+    "official_mcp": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages make no mention of the Model Context Protocol (MCP) or an MCP server."
+    }
+  },
+  "l2_model": "gemini-3.7-flash",
+  "changes": [
+    {
+      "field": "official_mcp",
+      "before": "no",
+      "after": "unknown",
+      "l2": "unverifiable",
+      "reason": "The provided pages make no mention of the Model Context Protocol (MCP) or an MCP server.",
+      "action": "to_unknown"
+    }
+  ],
+  "flags": [
+    "auth_methods:quote_not_found:['api_key', 'basic', 'jwt', 'other']",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developer.vonage.com/en/getting-started/overview",
+    "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "https://developer.vonage.com/en/api"
+  ]
+}

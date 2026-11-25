@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "aircall",
+    "one_liner": "Aircall offers a REST API and Webhooks supporting OAuth 2.0 and Basic Auth for managing phone calls, contacts, users, campaigns, and analytics.",
+    "auth_methods": [
+      "basic",
+      "oauth2"
+    ],
+    "access_test": "admin_approval",
+    "access_ship": "partner_gated",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Public integrations require becoming an approved tech partner and requesting OAuth credentials.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "With Aircall Public API, Authentication can be done through OAuth or Basic Auth.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "Before starting building the OAuth flow for your app, you will need to get OAuth client_id and client_secret from Aircall.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.aircall.io/docs/authentication",
+        "quote": "You\u2019re building a public integration and are an approved tech partner",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "Aircall Public API is a classic REST API.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.aircall.io/api-references",
+        "quote": "This service allows any developers to retrieve and manage Aircall data with HTTP requests.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.aircall.io/api-references",
+    "https://developer.aircall.io/docs/authentication"
+  ],
+  "model": "gemini-3.5-flash"
+}

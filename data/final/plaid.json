@@ -1,0 +1,95 @@
+{
+  "record": {
+    "id": "plaid",
+    "one_liner": "Plaid provides an API platform that connects bank accounts to applications for checking balances, transaction history, auth, and payments.",
+    "auth_methods": [
+      "api_key",
+      "other"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "Almost all Plaid API endpoints require a client_id and secret . These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard . Once you've completed the signup process and acknowledged our terms, we'll provide a live client_id and secret via the Dashboard.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://plaid.com/docs/quickstart/",
+        "quote": "Production Test or launch your app with unlimited live credentials",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://plaid.com/docs/api/",
+        "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://plaid.com/docs/",
+        "quote": "API Reference Explore server-side API libraries and integrate with API endpoints View reference",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://plaid.com/docs/",
+        "quote": "Plug me in via the Plaid MCP Server .",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "Almost all Plaid API endpoints require a client_id and secret, which represents an API key method."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "Developers can gain access by creating an account on the Plaid Dashboard to receive API credentials."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The quote mentions testing or launching with unlimited live credentials, but does not state whether publishing requires free self-serve or another paid plan."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The documentation states that the Plaid API is JSON over HTTP with POST requests and JSON responses."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The reference mentions exploring server-side API libraries and integrating with a broad set of API endpoints."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly mentions plugging into the Plaid MCP Server."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The quote mentions testing or launching with unlimited live credentials, but does not state whether publishing requires free self-serve or another paid plan.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://plaid.com/docs/",
+    "https://plaid.com/docs/api/",
+    "https://plaid.com/docs/auth/",
+    "https://plaid.com/docs/quickstart/"
+  ]
+}

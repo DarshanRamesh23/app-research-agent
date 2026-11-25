@@ -1,0 +1,6 @@
+15 of 100 apps are buildable now, 14 with a caveat, 1 blocked, 70 unknown.
+unknown is the most common auth method (35 apps), then oauth2 (28).
+Top blocker: ship_path_unverified (5 apps).
+14 apps are easy wins (self-serve, medium/broad API); 7 are gated and need outreach.
+5 apps are free to test but gated to ship.
+Official MCP: 20 yes, 1 community, 2 no, 77 unknown (L2 cannot prove a negative, so treat 'no' as 'not found').

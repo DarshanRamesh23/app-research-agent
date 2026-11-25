@@ -1,0 +1,76 @@
+{
+  "record": {
+    "id": "woocommerce",
+    "one_liner": "WooCommerce connects your store to external systems and services using API keys via the WordPress REST API.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "Most integrations require you to generate API keys in WooCommerce and enter them in the external service to establish the connection.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "This documentation is about the free, core WooCommerce plugin",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "This documentation is about the free, core WooCommerce plugin",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "quote": "WooCommerce now integrates directly with the WordPress REST API.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation states that integrations use API keys generated in WooCommerce (Consumer Key and Consumer Secret) to establish connections."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The page confirms WooCommerce is a free core plugin and provides developer resources for testing API requests."
+    },
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The page confirms WooCommerce is a free core plugin where integrations can be connected by generating API keys."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": " The page specifically details the WooCommerce REST API, which integrates directly with the WordPress REST API."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [],
+  "flags": [],
+  "sources": [
+    "https://woocommerce.com/document/woocommerce-rest-api/",
+    "https://developer.woocommerce.com/docs/rest-api/",
+    "https://developer.woocommerce.com/docs/getting-started/"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "ramp",
+    "one_liner": "Ramp offers API documentation shell pages that require JavaScript rendering, providing no readable content in the given sources.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "Documentation content unavailable in provided HTML shells",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.ramp.com/developers/authentication",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://docs.ramp.com/developers/getting-started",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://docs.ramp.com/developers/getting-started",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.ramp.com/developers/api-reference",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://docs.ramp.com/developers/api-reference",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://docs.ramp.com/developers/getting-started",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.ramp.com/developers/getting-started",
+    "https://docs.ramp.com/developers/authentication",
+    "https://docs.ramp.com/developers/api-reference"
+  ],
+  "model": "gemini-3.6-flash"
+}

@@ -1,0 +1,98 @@
+{
+  "zendesk": {
+  "auth_methods": ["oauth2", "api_key", "basic"],
+  "access_test": "free_trial",
+  "access_ship": "free_trial",
+  "api_type": "rest",
+  "official_mcp": "unknown",
+  "source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  "twilio": {
+  "auth_methods": ["basic", "api_key"],
+  "access_test": "free_trial",
+  "access_ship": "free_trial",
+  "api_type": "rest",
+  "official_mcp": "yes",
+  "source": "https://www.twilio.com/docs/usage/api"
+  },
+  "telegram": {
+  "auth_methods": ["api_key"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "rest",
+  "official_mcp": "community",
+  "source": "https://core.telegram.org/bots/api"
+  },
+  "shopify": {
+  "auth_methods": ["oauth2"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "graphql",
+  "official_mcp": "yes",
+  "source": "https://shopify.dev/docs/apps/build/authentication-authorization"
+  },
+  "firecrawl": {
+  "auth_methods": ["api_key", "oauth2"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "rest",
+  "official_mcp": "yes",
+  "source": "https://docs.firecrawl.dev/api-reference/introduction"
+  },
+  "sherlock": {
+  "auth_methods": ["none"],
+  "access_test": "no_api",
+  "access_ship": "no_api",
+  "api_type": "cli_only",
+  "official_mcp": "community",
+  "source": "https://github.com/sherlock-project/sherlock"
+  },
+  "github": {
+  "auth_methods": ["oauth2", "bearer_token", "jwt", "basic"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "both",
+  "official_mcp": "yes",
+  "source": "https://docs.github.com/en/rest/authentication"
+  },
+  "cloudflare": {
+  "auth_methods": ["bearer_token", "api_key"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "both",
+  "official_mcp": "yes",
+  "source": "https://developers.cloudflare.com/fundamentals/api/get-started/"
+  },
+  "notion": {
+  "auth_methods": ["bearer_token", "oauth2"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "rest",
+  "official_mcp": "yes",
+  "source": "https://developers.notion.com/reference/authentication"
+  },
+  "jira": {
+  "auth_methods": ["oauth2", "basic", "jwt"],
+  "access_test": "free_self_serve",
+  "access_ship": "admin_approval",
+  "api_type": "rest",
+  "official_mcp": "yes",
+  "source": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  "stripe": {
+  "auth_methods": ["api_key", "basic", "bearer_token"],
+  "access_test": "free_self_serve",
+  "access_ship": "free_self_serve",
+  "api_type": "rest",
+  "official_mcp": "yes",
+  "source": "https://docs.stripe.com/api/authentication"
+  },
+  "mermaid_cli": {
+  "auth_methods": ["none"],
+  "access_test": "no_api",
+  "access_ship": "no_api",
+  "api_type": "cli_only",
+  "official_mcp": "no",
+  "source": "https://github.com/mermaid-js/mermaid-cli"
+  }
+}

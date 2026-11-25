@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "pinterest",
+    "one_liner": "Pinterest offers an API for integrating with their platform, supporting OAuth 2.0 authentication and providing trial access for developers.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "admin_approval",
+    "access_ship": "admin_approval",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Requires admin approval for trial access.",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Build a working authentication flow based on OAuth 2 For full details on the OAuth process, review our guide on Scopes & Authentication .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Submit your request for trial access. Application requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed, letting you know whether it was approved or denied access.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "quote": "Submit your request for trial access. Application requests are reviewed by Pinterest. You will receive an email notification after your app has been reviewed, letting you know whether it was approved or denied access.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_type:quote_not_found:rest"
+  ],
+  "sources": [
+    "https://developers.pinterest.com/docs/getting-started/connect-app/",
+    "https://developers.pinterest.com/docs/getting-started/connect-app/",
+    "https://developers.pinterest.com/docs/api/v5/introduction/?"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "close",
+    "one_liner": "Close provides a REST API, webhooks, OAuth 2.0 and API key auth, and an official MCP server for CRM data and workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "basic"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.close.com/",
+        "quote": "Authentication API keys for scripts or OAuth 2.0 for user-facing integrations.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developer.close.com/",
+        "quote": "REST API Reference Full endpoint docs with schemas, examples, and an interactive API explorer.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developer.close.com/",
+        "quote": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API .",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developer.close.com/",
+        "quote": "Power AI agents \u2014 Give Claude, ChatGPT, Cursor, and other tools direct access to Close data via the MCP server \u2014 no code required.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developer.close.com/",
+    "https://developer.close.com/api/overview/api-key-authentication"
+  ],
+  "model": "gemini-3.5-flash"
+}

@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "snowflake",
+    "one_liner": "Snowflake is a cloud-based data warehousing and analytics platform offering extensive authentication methods, SQL capabilities, and programmatic integration support.",
+    "auth_methods": [
+      "oauth2",
+      "jwt",
+      "other"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "insufficient documentation provided to determine API types, access tiers, and MCP status",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.snowflake.com/en/guides-overview-secure",
+        "quote": "Authentication: SSO, MFA, keys, OAuth, workload identity, and agent identity. See Overview of Snowflake authentication and Agent identity .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.snowflake.com/en/guides-overview-secure",
+    "https://docs.snowflake.com/en/sql-reference"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

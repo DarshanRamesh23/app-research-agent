@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "freshdesk",
+    "one_liner": "Freshdesk provides a cloud-based customer support platform with a REST API supporting CRUD operations on tickets, contacts, agents, and more.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Authentication and access level details are not specified in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.freshdesk.com/api/",
+        "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.freshdesk.com/api/",
+        "quote": "Tickets Tickets Create a Ticket /api/v2/tickets Create an Outbound Email /api/v2/tickets/outbound_email View a Ticket /api/v2/tickets/[id]",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://developers.freshdesk.com/api/",
+    "https://developers.freshdesk.com/api/#authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

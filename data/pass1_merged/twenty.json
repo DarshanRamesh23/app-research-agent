@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "twenty",
+    "one_liner": "An open-source CRM with REST and GraphQL APIs, an app framework, and native MCP server support designed for technical teams.",
+    "auth_methods": [
+      "oauth2",
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Connect your AI assistant via OAuth and it can read and write your CRM data in natural language.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Start your free trial today without credit card. [...] Self-hosting the open source core is free.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Start your free trial today without credit card. [...] Self-hosting the open source core is free.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Developers REST & GraphQL API Yes Yes Yes",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Developers REST & GraphQL API Yes Yes Yes Webhooks Yes Yes Yes MCP server Yes Yes Yes App logs Yes Yes Yes",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://twenty.com/pricing",
+        "quote": "Every Cloud workspace ships with a native MCP server.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://twenty.com/pricing",
+    "https://github.com/twentyhq/twenty"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

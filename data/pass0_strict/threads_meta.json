@@ -1,0 +1,61 @@
+{
+  "record": {
+    "id": "threads_meta",
+    "one_liner": "API for creating and publishing posts, retrieving media and profiles, moderating replies, and accessing insights on Threads.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "medium",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.facebook.com/documentation/threads/get-started",
+        "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.facebook.com/documentation/threads/get-started",
+        "quote": "To test your app with a Threads user, you must first send an invitation to the Threads user's profile and accept the invitation.",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://developers.facebook.com/documentation/threads/get-started",
+        "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the App Review process, and your app must be published.",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.facebook.com/documentation/threads/overview",
+        "quote": "curl -s -X GET \"https://graph.threads.com/v1.0/<THREADS_USER_ID>/threads_publishing_limit?fields=quota_usage,config&access_token=<ACCESS_TOKEN>\"",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://developers.facebook.com/documentation/threads",
+        "quote": "Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "access_test:quote_not_found",
+    "access_ship:quote_not_found",
+    "api_type:quote_not_found",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.facebook.com/documentation/threads",
+    "https://developers.facebook.com/documentation/threads/get-started",
+    "https://developers.facebook.com/documentation/threads/overview"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

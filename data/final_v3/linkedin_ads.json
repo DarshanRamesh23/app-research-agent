@@ -1,0 +1,81 @@
+{
+  "record": {
+    "id": "linkedin_ads",
+    "one_liner": "LinkedIn Marketing API provides programmatic access to manage ad campaigns, creatives, analytics, and lead synchronization.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "admin_approval",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-11",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-11",
+        "quote": "Note Matched Audiences, Audience Insights, Media Planning API, and Company Intelligence API are private APIs and require additional approval.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-11",
+        "quote": "your use of the LinkedIn programmatic web APIs, software, and other functionality",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-11",
+        "quote": "Advertising API Enable ads management at scale: Build functionality for scalable ads management with Ad Campaigns and Creatives APIs.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "access_ship": {
+      "verdict": "supported",
+      "reason": "The text explicitly states that private APIs require additional approval to access."
+    },
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The page mentions 'programmatic web APIs' but does not explicitly state that the API type is REST."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The page details a wide set of API products covering ad campaigns, creatives, analytics, event management, lead sync, conversions, audience insights, and media planning."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "api_type",
+      "before": "rest",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "The page mentions 'programmatic web APIs' but does not explicitly state that the API type is REST.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [
+    "auth_methods:quote_not_found:['oauth2']"
+  ],
+  "sources": [
+    "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-11"
+  ]
+}

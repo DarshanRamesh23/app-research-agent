@@ -1,0 +1,6 @@
+access_test,admin_approval,free_self_serve,free_trial,no_api,paid_plan,partner_gated,unknown
+admin_approval,1,0,0,0,0,0,1
+free_self_serve,1,16,0,0,0,1,6
+free_trial,0,0,1,0,3,0,2
+no_api,0,0,0,1,0,0,0
+unknown,0,0,0,0,1,0,66

@@ -1,0 +1,94 @@
+{
+  "record": {
+    "id": "slack",
+    "one_liner": "Slack provides a comprehensive platform featuring a Web API with over 100 HTTP endpoints, an Events API, SCIM/Admin APIs, and an official remote MCP server.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "quote": "Slack apps are installed with a v2 OAuth 2.0 flow.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.slack.dev/",
+        "quote": "No approval yet? Try it in a free Developer Program sandbox .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "quote": "OAuth allows a user in any Slack workspace to install your app. At the end of the OAuth flow, your app gains an access token.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.slack.dev/apis/",
+        "quote": "The Web API supplies a collection of HTTP methods that underpin the majority of Slack app functionality.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.slack.dev/apis/",
+        "quote": "With over 100 methods available, it's impossible to explain everything that's possible with the Web API, but we're sure there's one right for your app.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.slack.dev/",
+        "quote": "One install adds the Slack developer skills, plus the Slack MCP server in Claude Code and Cursor.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation states that Slack apps are installed with a v2 OAuth 2.0 flow."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The text explicitly states to try it in a free Developer Program sandbox if there is no approval yet."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The quote mentions OAuth allows installation in any workspace, but does not specify if publishing requires a paid plan or app review."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The Web API is described as supplying a collection of HTTP methods."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The documentation states there are over 100 methods available for the Web API."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The page details the official Slack MCP server provided by the vendor."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The quote mentions OAuth allows installation in any workspace, but does not specify if publishing requires a paid plan or app review.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.slack.dev/authentication/installing-with-oauth/",
+    "https://docs.slack.dev/",
+    "https://docs.slack.dev/apis/"
+  ],
+  "rules": []
+}

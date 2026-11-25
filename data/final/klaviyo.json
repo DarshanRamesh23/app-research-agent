@@ -1,0 +1,101 @@
+{
+  "record": {
+    "id": "klaviyo",
+    "one_liner": "Klaviyo API is a JSON:API compliant REST platform enabling read and write access to customer data, profiles, events, campaigns, and lists using private API keys or OAuth.",
+    "auth_methods": [
+      "api_key",
+      "oauth2"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs).",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "You need a Klaviyo account. To keep test data out of your production account, create a test account first, and use it for every step below.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "Create a private API key and make your first call to the Klaviyo API in a few minutes.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developers.klaviyo.com/en/docs/get_started",
+        "quote": "Building with an AI agent? See Set up your AI agent to give it these docs as Markdown, the OpenAPI spec and Klaviyo's MCP server.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page directly lists private key, OAuth, and public key as the 3 methods of authentication."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The documentation states you need a Klaviyo account and should create a test account first to keep test data out of production."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages mention building with an AI agent and MCP servers, but do not provide information on app review, partner programs, or paid plans required to ship."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The reference page explicitly refers to the 'Klaviyo REST API'."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided text snippets do not contain the endpoint count list to verify this specific breadth claim."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The documentation explicitly mentions 'Klaviyo's MCP server' for AI agents."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages mention building with an AI agent and MCP servers, but do not provide information on app review, partner programs, or paid plans required to ship.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_breadth",
+      "before": "broad",
+      "after": "broad",
+      "l2": "unverifiable",
+      "reason": "The provided text snippets do not contain the endpoint count list to verify this specific breadth claim.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developers.klaviyo.com/en/docs/get_started",
+    "https://developers.klaviyo.com/en/reference"
+  ]
+}

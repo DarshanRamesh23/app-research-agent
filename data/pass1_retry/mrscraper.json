@@ -1,0 +1,55 @@
+{
+  "record": {
+    "id": "mrscraper",
+    "one_liner": "An AI-powered scraping and data extraction platform with APIs, SDKs, proxies, and automation workflows.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "Token Plan Learn how tokens work and create an API token for authentication.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://mrscraper.com/pricing",
+        "quote": "New accounts start with a 7-day free trial and 1,000 tokens. A card is required to start.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://mrscraper.com/pricing",
+        "quote": "Essential $99 /month Enterprise Contact Us Included tokens 200,000 tokens 500k+ tokens",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "Workflow API Access Activate a scraper as an API endpoint and run it programmatically.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "API Reference Explore every endpoint, authentication, pagination, and error handling.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+        "quote": "MCP Server Let AI agents fetch pages and search Google through the Model Context Protocol.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.mrscraper.com/docs/getting-started/overview",
+    "https://mrscraper.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

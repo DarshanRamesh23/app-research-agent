@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "telegram",
+    "one_liner": "Telegram provides open APIs (Bot API, MTProto API, Gateway API, and TDLib) allowing developers to build custom messaging clients, bots, mini apps, and verification tools free of charge.",
+    "auth_methods": [
+      "api_key",
+      "other"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "unknown",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "You will get basic addresses as well as the api_id and api_hash parameters required for user authorization.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "quote": "It is necessary that you obtain your own API id before you publish your app.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://core.telegram.org/api",
+        "quote": "TDLib supports all Telegram features and makes developing Telegram apps a breeze on any platform.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://core.telegram.org/api/obtaining_api_id",
+    "https://core.telegram.org/api/auth",
+    "https://core.telegram.org/methods",
+    "https://core.telegram.org/api"
+  ],
+  "model": "gemini-3.5-flash"
+}

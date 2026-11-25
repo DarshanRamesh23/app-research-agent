@@ -1,0 +1,91 @@
+{
+  "record": {
+    "id": "brex",
+    "one_liner": "Brex offers a REST API for financial data and card management using bearer token authentication generated from the Brex dashboard.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "access_test": "admin_approval",
+    "access_ship": "admin_approval",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "app_review",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "To pass your user token to Brex APIs, add it as a header to your API calls in the following format: Authorization: \"Bearer {{your user_token here}}\"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "Sign in to dashboard.brex.com as an account admin or card admin",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developer.brex.com/guides/authentication",
+        "quote": "Brex currently only offers a production API server at https://api.brex.com . This is the base URL for all API calls.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The pages directly show that the user token is passed using the Bearer authorization header format."
+    },
+    "access_test": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages explain how to generate a user token via the dashboard as an admin, but do not explicitly detail whether a developer can get credentials to test."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The text describes generating tokens and accepting developer agreements in the dashboard, but does not provide criteria for publishing or using an integration with real customers."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pages reference making API calls to the Brex API server at https://api.brex.com."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "access_test",
+      "before": "admin_approval",
+      "after": "admin_approval",
+      "l2": "unverifiable",
+      "reason": "The provided pages explain how to generate a user token via the dashboard as an admin, but do not explicitly detail whether a developer can get credentials to test.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "access_ship",
+      "before": "admin_approval",
+      "after": "admin_approval",
+      "l2": "unverifiable",
+      "reason": "The text describes generating tokens and accepting developer agreements in the dashboard, but does not provide criteria for publishing or using an integration with real customers.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://developer.brex.com/guides/authentication"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "record": {
+    "id": "reducto",
+    "one_liner": "Reducto is an agentic document platform providing production-grade document processing, parsing, extraction, and editing capabilities via SDKs and REST APIs.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "ship_path_unverified",
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "curl -X POST \"https://platform.reducto.ai/parse\" \\\n -H \"Authorization: Bearer $REDUCTO_API_KEY \"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "Sign up for a free account without leaving the docs. Signed in as Create account Sign in 2 Get your API key Create a key right here.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.reducto.ai/",
+        "quote": "Available in Python, Node.js, Go, and REST, with Studio for visual pipeline building.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "Now that you can parse documents, explore the other Reducto endpoints: /extract Define a JSON schema and extract specific fields from your documents. /split Divide long documents into sections based on content type. /edit Fill PDF forms and modify DOCX documents programmatically.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.reducto.ai/",
+        "quote": "MCP Server Give agents Reducto tools directly in Claude Code, Codex, Cursor, and other MCP clients.",
+        "confidence": 1.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not contain the quote about the bearer token authorization header."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pages directly show that developers can sign up for a free account and get an API key directly within the docs."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pages state the API is available in Python, Node.js, Go, and REST."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The pages list multiple endpoints like /parse, /extract, /split, /classify, and /edit."
+    },
+    "official_mcp": {
+      "verdict": "supported",
+      "reason": "The pages explicitly mention an MCP Server that gives agents Reducto tools directly in MCP clients."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "bearer_token"
+      ],
+      "after": [
+        "bearer_token"
+      ],
+      "l2": "unverifiable",
+      "reason": "The provided pages do not contain the quote about the bearer token authorization header.",
+      "action": "confirmed_after_recheck"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.reducto.ai/",
+    "https://docs.reducto.ai/api-reference/api/sections/parse/operations/parse",
+    "https://docs.reducto.ai/quickstart",
+    "https://docs.reducto.ai/quickstart"
+  ]
+}

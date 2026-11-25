@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "bigcommerce",
+    "one_liner": "BigCommerce offers a suite of REST and GraphQL APIs using OAuth and JWT authentication to manage store data, authenticate customers, and build apps.",
+    "auth_methods": [
+      "oauth2",
+      "jwt",
+      "api_key",
+      "bearer_token"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "both",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce\u2019s REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "quote": "BigCommerce offers a suite of APIs that let you manage store data, sign customers in, make client-side queries for product information, and write apps that integrate third-party services into store operations.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

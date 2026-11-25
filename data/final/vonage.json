@@ -1,0 +1,68 @@
+{
+  "record": {
+    "id": "vonage",
+    "one_liner": "Vonage provides cloud communications APIs for voice, video, messaging, and verification.",
+    "auth_methods": [
+      "api_key",
+      "basic",
+      "jwt",
+      "other"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "quote": "Vonage APIs support different authentication methods depending on which product you are using: API{filter} API Key and Secret (Header) JSON Web Token (JWT) Accounts Application Audit Channel Manager Conversation Conversion Device Location Retrieval Dispatch External Accounts Identity Insights Media Messages 1 Numbers Number Insight Pricing v1 Pricing v2 Programmable SIP Quality on Demand Redact Reports SMS Verify (Legacy) Verify 2 Voice 3 Video 1 Messages supports both JWT and Basic authentication",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation lists API Key, Basic, and JSON Web Token (JWT) as authentication methods."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [],
+  "flags": [
+    "api_type:quote_not_found:rest",
+    "api_breadth:quote_not_found:broad"
+  ],
+  "sources": [
+    "https://developer.vonage.com/en/getting-started/concepts/authentication"
+  ]
+}

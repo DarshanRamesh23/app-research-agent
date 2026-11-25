@@ -1,0 +1,80 @@
+{
+  "record": {
+    "id": "devin",
+    "one_liner": "Devin provides REST APIs allowing programmatic interaction for managing sessions, knowledge, playbooks, secrets, analytics, audit logs, and more using service users or Personal Access Tokens.",
+    "auth_methods": [
+      "bearer_token",
+      "api_key"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.devin.ai/api-reference/overview",
+        "quote": "-H \"Authorization: Bearer $DEVIN_API_KEY \"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.devin.ai/api-reference/overview",
+        "quote": "Learn how to programmatically interact with Devin using our REST APIs",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.devin.ai/api-reference/overview",
+        "quote": "For managing resources within a single organization \u2014 sessions, knowledge, playbooks, secrets, and more.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_with_caveat"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The page demonstrates using an API key passed as a bearer token via the header 'Authorization: Bearer $DEVIN_API_KEY'."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The page explicitly mentions interacting with Devin using 'REST APIs'."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The documentation lists various organization resources managed by the API, but does not explicitly rate or define its breadth as 'medium'."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "api_breadth",
+      "before": "medium",
+      "after": "broad",
+      "l2": "unverifiable",
+      "reason": "The documentation lists various organization resources managed by the API, but does not explicitly rate or define its breadth as 'medium'.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.devin.ai/api-reference/overview"
+  ]
+}

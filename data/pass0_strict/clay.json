@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "clay",
+    "one_liner": "A platform for go-to-market teams to build automated outbound and data enrichment workflows, integrating data providers and external APIs.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Specific API endpoint documentation and authentication methods are not detailed in the provided sources.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Start building in Clay for free. No strings attached.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Start building in Clay for free. No strings attached.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "HTTP API integrations See examples of HTTP API integrations",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "https://www.clay.com/pricing",
+        "quote": "Clay MCP for Reps Search, enrich, and reach out to leads from your Al chat tool",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.clay.com/pricing"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

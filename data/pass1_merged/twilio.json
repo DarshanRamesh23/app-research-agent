@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "twilio",
+    "one_liner": "Twilio provides REST APIs and SDKs for communications features like messaging and phone calls, authenticated via API keys or basic auth.",
+    "auth_methods": [
+      "api_key",
+      "basic"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://www.twilio.com/docs/iam/api-keys",
+        "quote": "API keys are the preferred way to authenticate with Twilio's REST APIs .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://www.twilio.com/docs/usage/api",
+        "quote": "The Twilio APIs are organized around REST .",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://www.twilio.com/docs/iam/api-keys",
+    "https://www.twilio.com/docs/usage/api"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "rerun": true
+}

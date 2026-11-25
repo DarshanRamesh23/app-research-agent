@@ -1,0 +1,64 @@
+{
+  "record": {
+    "id": "whatsapp_business",
+    "one_liner": "Enterprise-grade APIs for messaging, calling, and managing WhatsApp business assets at scale.",
+    "auth_methods": [
+      "bearer_token",
+      "other"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "unknown",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "quote": "Authentication uses OAuth (not 2.0) access tokens, while permissions restrict access to specific resources.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "quote": "When you get started with Cloud API, a test WhatsApp account, test Messaging account, and test business phone number are automatically created for you.",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+        "quote": "Meta charges on a per-message basis, aligned to industry standards. Meta charges by category\u2013market, and only for messages from businesses to users.",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "quote": "The WhatsApp Business Platform is built on Graph API and uses HTTP protocol. API requests include path, body, and header parameters.",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "quote": "The WhatsApp Business Platform enables businesses to communicate with customers at scale.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "access_test:quote_not_found",
+    "access_ship:quote_not_found",
+    "api_type:quote_not_found",
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

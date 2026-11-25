@@ -1,0 +1,58 @@
+{
+  "record": {
+    "id": "asana",
+    "one_liner": "Asana's platform provides a REST API with support for OAuth, Personal Access Tokens, and Service Accounts to extend and automate workflows.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://developers.asana.com/docs/authentication",
+        "quote": "Here are the various authentication options and why you might want to use each of them... Personal access token... Service Account... OAuth... OpenID Connect",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://developers.asana.com/docs/overview",
+        "quote": "You can test in any of your existing workspaces, create a free account, or request a developer sandbox .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://developers.asana.com/docs/overview",
+        "quote": "If you are building an integration with a 3rd party tool and intend for any Asana user to discover it, apps can be published to the Asana App Directory .",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "quote": "The Asana API is a REST ful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "quote": "This reference is generated from our OpenAPI Specification , and contains a comprehensive reference for objects, schemas, and endpoints available in the API.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "auth_methods:quote_not_found"
+  ],
+  "sources": [
+    "https://developers.asana.com/docs/overview",
+    "https://developers.asana.com/reference/rest-api-reference",
+    "https://developers.asana.com/docs/authentication"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,54 @@
+{
+  "record": {
+    "id": "youtube_transcript",
+    "one_liner": "An API and Model Context Protocol (MCP) tool for extracting YouTube video transcripts, search, channel, and playlist data.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "narrow",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": "insufficient information in sources regarding authentication methods and access/pricing tiers",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Complete guide to transcripts, search, channel, and playlist endpoints with authentication, parameters, and examples.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Complete guide to transcripts, search, channel, and playlist endpoints with authentication, parameters, and examples.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://transcriptapi.com/docs/",
+        "quote": "Use TranscriptAPI with Model Context Protocol for seamless integration with AI tools.",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://transcriptapi.com/docs/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

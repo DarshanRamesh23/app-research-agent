@@ -1,0 +1,57 @@
+{
+  "record": {
+    "id": "netlify",
+    "one_liner": "Netlify provides a REST API to manage atomic deploys, form submissions, DNS, and sites using OAuth2 and bearer tokens.",
+    "auth_methods": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Netlify uses OAuth2 for authentication authentication The process of verifying who someone is before letting them access your site. \u00d7 . All requests must use HTTPS HTTPS The secure protocol, enabled by SSL, that encrypts data transferred between a browser and your site. \u00d7 . To generate a personal access token personal access token A credential tied to your personal account that lets tools and scripts act on your behalf without your password. \u00d7 (PAT PAT Short for personal access token, a credential tied to your personal account. \u00d7 ): Go to Applications > Personal access tokens .",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "To generate a personal access token personal access token A credential tied to your personal account that lets tools and scripts act on your behalf without your password. \u00d7 (PAT PAT Short for personal access token, a credential tied to your personal account. \u00d7 ): Go to Applications > Personal access tokens .",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "If you\u2019re making a public integration with Netlify for others to enjoy, you must use OAuth2. This allows users to authorize your application to use Netlify on their behalf without having to copy/paste API tokens or touch sensitive login info.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS DNS The system that translates a domain name like yoursite.com into the address computers use to find your site. \u00d7 , and so much more.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

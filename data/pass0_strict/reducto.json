@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "reducto",
+    "one_liner": "Document parsing, data extraction, and document modification API platform utilizing advanced vision language models.",
+    "auth_methods": [
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "yes",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "-H \"Authorization: Bearer $REDUCTO_API_KEY \"",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "1 Create a Reducto account Sign up for a free account without leaving the docs.",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "curl -X POST \"https://platform.reducto.ai/parse\" \\ -H \"Authorization: Bearer $REDUCTO_API_KEY \" \\ -H \"Content-Type: application/json\" \\",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "Now that you can parse documents, explore the other Reducto endpoints: /extract Define a JSON schema and extract specific fields from your documents. /split Divide long documents into sections based on content type. /edit Fill PDF forms and modify DOCX documents programmatically. /parse (async) Process documents asynchronously with webhooks for high-volume workloads.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://docs.reducto.ai/quickstart",
+        "quote": "For MCP, install once with uvx mcp-server-reducto --login , then ask the agent to call parse_document(document_url=\"https://cdn.reducto.ai/samples/fidelity-example.pdf\") .",
+        "confidence": 1.0
+      }
+    }
+  },
+  "flags": [
+    "access_ship:quote_not_found"
+  ],
+  "sources": [
+    "https://docs.reducto.ai/api-reference/api/sections/parse/operations/parse",
+    "https://docs.reducto.ai/quickstart",
+    "https://docs.reducto.ai/quickstart",
+    "https://docs.reducto.ai/quickstart"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "zoho_cliq",
+    "one_liner": "Zoho Cliq offers team messaging, audio/video meetings, channels, and developer platform extensions (APIs, bots, functions), with free and paid tiers.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "unknown",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": "Specific API authentication mechanisms and protocols are not detailed in the provided text.",
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://www.zoho.com/cliq/pricing.html",
+        "quote": "Start free trial Get Started Everything in the Free edition",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://www.zoho.com/cliq/pricing.html",
+        "quote": "Free Chat plans for all Teams size Convenient plans for businesses of all sizes",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_breadth": {
+        "url": "https://www.zoho.com/cliq/pricing.html",
+        "quote": "Developer platform API support Slash commands Message actions Bots Functions Schedulers Databases Database records Widgets Internal apps",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "api_breadth:quote_not_found"
+  ],
+  "sources": [
+    "https://www.zoho.com/cliq/pricing.html"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

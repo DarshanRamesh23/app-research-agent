@@ -1,0 +1,88 @@
+{
+  "record": {
+    "id": "sentry",
+    "one_liner": "Sentry provides a web API to manage account-level resources, organizations, teams, and data with support for token and OAuth2 authentication.",
+    "auth_methods": [
+      "bearer_token",
+      "oauth2"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "unknown",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.sentry.io/api/auth/",
+        "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.sentry.io/api/",
+        "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.sentry.io/api/",
+        "quote": "You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "unknown"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "contradicted",
+      "reason": "The documentation supports bearer tokens and OAuth2, but does not mention 'api_key'."
+    },
+    "api_type": {
+      "verdict": "supported",
+      "reason": "The pages describe the Sentry web API as used to access the platform programmatically."
+    },
+    "api_breadth": {
+      "verdict": "supported",
+      "reason": "The quote directly states that APIs can be used to manage account-level resources like organizations and teams, as well as manage and export data."
+    }
+  },
+  "l2_model": "gemini-3.5-flash-lite",
+  "changes": [
+    {
+      "field": "auth_methods",
+      "before": [
+        "bearer_token",
+        "oauth2",
+        "api_key"
+      ],
+      "after": [
+        "bearer_token",
+        "oauth2"
+      ],
+      "l2": "contradicted",
+      "reason": "The documentation supports bearer tokens and OAuth2, but does not mention 'api_key'.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [],
+  "sources": [
+    "https://docs.sentry.io/api/",
+    "https://docs.sentry.io/api/auth/"
+  ]
+}

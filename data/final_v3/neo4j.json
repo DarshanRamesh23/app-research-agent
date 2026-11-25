@@ -1,0 +1,111 @@
+{
+  "record": {
+    "id": "neo4j",
+    "one_liner": "Neo4j is a graph database platform offering cloud-managed graph services, APIs, and client drivers with OAuth 2.0 and Basic authentication.",
+    "auth_methods": [
+      "oauth2",
+      "basic",
+      "bearer_token"
+    ],
+    "access_test": "free_self_serve",
+    "access_ship": "free_self_serve",
+    "api_type": "rest",
+    "api_breadth": "medium",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://neo4j.com/docs/aura/api/authentication/",
+        "quote": "The Aura API uses OAuth 2.0 for API authentication... Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "AuraDB Free Learn and Explore Graphs $0 Start learning No credit card or other payment method required",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://neo4j.com/docs/aura/api/authentication/",
+        "quote": "You can use the following /oauth/token endpoint to obtain a Bearer Token for authenticating API requests.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://neo4j.com/pricing/",
+        "quote": "API to Provision and Manage Instances Included",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "https://github.com/neo4j",
+        "quote": "mcp Public Neo4j official MCP Server Go",
+        "confidence": 0.0
+      }
+    },
+    "verdict_pass1": "buildable_now"
+  },
+  "l2": {
+    "auth_methods": {
+      "verdict": "supported",
+      "reason": "The documentation specifies that the Aura API uses OAuth 2.0, HTTP Basic authentication for the token endpoint, and Bearer tokens for API requests."
+    },
+    "access_test": {
+      "verdict": "supported",
+      "reason": "The pricing page confirms that developers can sign up for AuraDB Free for $0 without entering a credit card."
+    },
+    "access_ship": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not state the access requirements for publishing or deploying production integrations, and a free sandbox tier does not prove access_ship under the rules."
+    },
+    "api_type": {
+      "verdict": "unverifiable",
+      "reason": "The provided pages do not contain the quoted text or provide details confirming the supported API types."
+    },
+    "api_breadth": {
+      "verdict": "unverifiable",
+      "reason": "The provided text does not contain the quoted details or information necessary to evaluate API breadth."
+    }
+  },
+  "l2_model": "gemini-3.5-flash",
+  "changes": [
+    {
+      "field": "access_ship",
+      "before": "free_self_serve",
+      "after": "free_self_serve",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not state the access requirements for publishing or deploying production integrations, and a free sandbox tier does not prove access_ship under the rules.",
+      "action": "confirmed_after_recheck"
+    },
+    {
+      "field": "api_type",
+      "before": "both",
+      "after": "rest",
+      "l2": "unverifiable",
+      "reason": "The provided pages do not contain the quoted text or provide details confirming the supported API types.",
+      "action": "corrected"
+    },
+    {
+      "field": "api_breadth",
+      "before": "broad",
+      "after": "medium",
+      "l2": "unverifiable",
+      "reason": "The provided text does not contain the quoted details or information necessary to evaluate API breadth.",
+      "action": "corrected"
+    }
+  ],
+  "flags": [
+    "official_mcp:quote_not_found:yes"
+  ],
+  "sources": [
+    "https://neo4j.com/docs/aura/api/authentication/",
+    "https://neo4j.com/docs/",
+    "https://neo4j.com/docs/getting-started/",
+    "https://neo4j.com/pricing/",
+    "https://github.com/neo4j"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "record": {
+    "id": "github",
+    "one_liner": "GitHub REST API documentation for creating integrations, retrieving data, and automating workflows.",
+    "auth_methods": [
+      "oauth2",
+      "basic",
+      "bearer_token",
+      "jwt"
+    ],
+    "access_test": "unknown",
+    "access_ship": "unknown",
+    "api_type": "rest",
+    "api_breadth": "unknown",
+    "official_mcp": "unknown",
+    "mcp_url": null,
+    "verdict": "buildable_with_caveat",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "quote": "To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There are a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN in a GitHub Actions workflow. After creating a token, you can authenticate your request by sending the token in the Authorization header of your request.",
+        "confidence": 1.0
+      },
+      "access_test": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_ship": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "api_type": {
+        "url": "https://docs.github.com/en/rest",
+        "quote": "GitHub REST API documentation Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [],
+  "sources": [
+    "https://docs.github.com/en/rest",
+    "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "https://docs.github.com/en/rest/quickstart"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

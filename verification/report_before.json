@@ -1,0 +1,98 @@
+{
+  "pass1": {
+    "auth_methods": {
+      "correct": 3,
+      "wrong": 6,
+      "abstain": 3,
+      "lenient": 5
+    },
+    "access_test": {
+      "correct": 8,
+      "wrong": 2,
+      "abstain": 2,
+      "lenient": 8
+    },
+    "access_ship": {
+      "correct": 4,
+      "wrong": 6,
+      "abstain": 2,
+      "lenient": 4
+    },
+    "api_type": {
+      "correct": 7,
+      "wrong": 4,
+      "abstain": 1,
+      "lenient": 7
+    },
+    "official_mcp": {
+      "correct": 4,
+      "wrong": 4,
+      "abstain": 3,
+      "lenient": 4
+    }
+  },
+  "final_v2": {
+    "auth_methods": {
+      "correct": 3,
+      "wrong": 6,
+      "abstain": 3,
+      "lenient": 5
+    },
+    "access_test": {
+      "correct": 9,
+      "wrong": 1,
+      "abstain": 2,
+      "lenient": 9
+    },
+    "access_ship": {
+      "correct": 5,
+      "wrong": 4,
+      "abstain": 3,
+      "lenient": 5
+    },
+    "api_type": {
+      "correct": 7,
+      "wrong": 4,
+      "abstain": 1,
+      "lenient": 7
+    },
+    "official_mcp": {
+      "correct": 4,
+      "wrong": 0,
+      "abstain": 7,
+      "lenient": 4
+    }
+  },
+  "final_v3": {
+    "auth_methods": {
+      "correct": 3,
+      "wrong": 7,
+      "abstain": 2,
+      "lenient": 5
+    },
+    "access_test": {
+      "correct": 9,
+      "wrong": 1,
+      "abstain": 2,
+      "lenient": 9
+    },
+    "access_ship": {
+      "correct": 5,
+      "wrong": 4,
+      "abstain": 3,
+      "lenient": 5
+    },
+    "api_type": {
+      "correct": 8,
+      "wrong": 4,
+      "abstain": 0,
+      "lenient": 8
+    },
+    "official_mcp": {
+      "correct": 4,
+      "wrong": 0,
+      "abstain": 7,
+      "lenient": 4
+    }
+  }
+}

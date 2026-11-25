@@ -1,0 +1,56 @@
+{
+  "record": {
+    "id": "dataforseo",
+    "one_liner": "REST-based SEO data API providing various endpoints for search engine optimization software and data analysis.",
+    "auth_methods": [
+      "unknown"
+    ],
+    "access_test": "free_trial",
+    "access_ship": "paid_plan",
+    "api_type": "rest",
+    "api_breadth": "broad",
+    "official_mcp": "no",
+    "mcp_url": null,
+    "verdict": "buildable_now",
+    "blocker": null,
+    "evidence": {
+      "auth_methods": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      },
+      "access_test": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "3. Test with API Playground 4. Free Unlimited Trial Info",
+        "confidence": 1.0
+      },
+      "access_ship": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "With DataForSEO you can get all the data you need while saving your time and budget.",
+        "confidence": 1.0
+      },
+      "api_type": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+        "confidence": 1.0
+      },
+      "api_breadth": {
+        "url": "https://docs.dataforseo.com/v3/",
+        "quote": "OpenAPI specification YAML-formatted specification for all APIs LangChain integration DataForSEO API Wrapper",
+        "confidence": 1.0
+      },
+      "official_mcp": {
+        "url": "",
+        "quote": "",
+        "confidence": 0.0
+      }
+    }
+  },
+  "flags": [
+    "official_mcp:absence_claim"
+  ],
+  "sources": [
+    "https://docs.dataforseo.com/v3/"
+  ],
+  "model": "gemini-3.5-flash-lite"
+}
